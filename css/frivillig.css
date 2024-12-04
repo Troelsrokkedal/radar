@@ -55,7 +55,7 @@ background: linear-gradient(180deg, #4BB54F, #214F22 );
     display: none; 
     background-color: #215C4C;
     position: absolute;
-    top: 0.9rem; 
+    top: 5rem; 
     right: 0;
     width: 100%;
     text-align: left;
@@ -101,4 +101,72 @@ font-family: JetBrains Mono;
 margin: 1rem;
 margin-top: -1rem;
 }
+
+.frivilligh2 {
+    text-decoration: none;
+    color: black;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    background-color: #215C4C;
+    border-radius: 3px;
+    padding: 4px 1px;
+    position: absolute;
+    border: none;
+    box-shadow: 2px 2px 4px 2px black;
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.frivilligtext1{
+    text-align: justify;
+    margin: 1rem;
+    font-family: JetBrains Mono;
+    line-height: 1.8rem;  
+    font-size: 0.8rem; 
+    margin-top: 6rem;
+}
+
+h4 {
+    text-align: left;
+    font-size: 1rem;
+    font-family: JetBrains Mono;
+    margin-top: 0.8rem; 
+}
+
+.frivilligbillede123 {
+    position: relative;
+    width: 275px;
+    height: 325px;
+}
+
+.mand{
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 1rem;
+    right: 5rem;
+}
+
+.blae{
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 7rem;
+    right: -5rem;
+    
+}
+
+.pige {
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 13rem;
+    right: 5rem;
+    
+}
+
+
+
+
+
 }

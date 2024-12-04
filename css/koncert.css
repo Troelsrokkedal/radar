@@ -54,7 +54,7 @@ background: linear-gradient(180deg, #4BB54F, #214F22 );
     display: none; 
     background-color: #215C4C;
     position: absolute;
-    top: 0.9rem; 
+    top: 5rem; 
     right: 0;
     width: 100%;
     text-align: left;
@@ -92,27 +92,20 @@ h2 {
     font-family: JetBrains Mono;
     margin: 1rem;
 }
-.h2femy {
+.h2artister {
     text-decoration: none;
     color: black;
     font-family: JetBrains Mono;
     font-weight: bold;
     background-color: #215C4C;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 4px 1px;
     position: absolute;
     border: none;
     box-shadow: 2px 2px 4px 2px black;
     text-align: center;
-    margin-top: -2rem;
-} 
-h3 {
-    text-align: left;
-    font-size: 1rem;
-    font-family: JetBrains Mono;
-    margin: 1rem;
     margin-top: -6rem;
-}
+} 
 
 .femytext{
     text-align: justify;
@@ -130,12 +123,28 @@ h3 {
     box-shadow: 2px 2px 4px 2px black;
 }
 
+.h2artister1 {
+    text-decoration: none;
+    color: black;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    background-color: #215C4C;
+    border-radius: 3px;
+    padding: 4px 1px;
+    position: absolute;
+    border: none;
+    box-shadow: 2px 2px 4px 2px black;
+    text-align: center;
+    margin-top: -5rem;
+} 
+
 .joeandtheshitboystext{
     text-align: justify;
     margin: 1rem;
     font-family: JetBrains Mono;
     line-height: 1.8rem;  
     font-size: 0.8rem; 
+    margin-top: 6rem;
 }
 
 .joeandtheshitboysbillede {
