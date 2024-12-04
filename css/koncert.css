@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(/fonts/JetBrainsMono-Regular.ttf);
+}
+
+
+@media screen and (max-width: 391px ) {
+* {
+font-family: JetBrains Mono;
+}   
+body {
+background: linear-gradient(180deg, #4BB54F, #214F22 );
+} 
+
+.forsidelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    margin: auto; 
+    padding-top: 1rem;
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+.line {
+    height: 0.2rem;
+    background-color: #215C4C; 
+    margin: 5px 0;
+    border-radius: 0.2rem; 
+}
+
+.menu {
+    display: none; 
+    background-color: #215C4C;
+    position: absolute;
+    top: 0.9rem; 
+    right: 0;
+    width: 100%;
+    text-align: left;
+    font-family: JetBrains Mono;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 1.5rem;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.burger-checkbox:checked + .burger + .menu {
+    display: block;
+}
+
+.menuhr {
+    border-color: black;
+    margin: 1rem;
+    
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: JetBrains Mono;
+    margin: 1rem;
+}
+.h2femy {
+    text-decoration: none;
+    color: black;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    background-color: #215C4C;
+    border-radius: 10px;
+    padding: 4px 1px;
+    position: absolute;
+    border: none;
+    box-shadow: 2px 2px 4px 0px black;
+    text-align: center;
+    margin-top: -2rem;
+} 
+h3 {
+text-align: left;
+font-size: 1rem;
+font-family: JetBrains Mono;
+margin: 1rem;
+margin-top: -6rem;
+}
+
+.femytext{
+    text-align: justify;
+    margin: 1rem;
+    font-family: JetBrains Mono;
+    line-height: 1.8rem;  
+    font-size: 0.8rem; 
+    margin-top: 7rem;
+}
+}
