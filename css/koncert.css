@@ -102,16 +102,16 @@ h2 {
     padding: 4px 1px;
     position: absolute;
     border: none;
-    box-shadow: 2px 2px 4px 0px black;
+    box-shadow: 2px 2px 4px 2px black;
     text-align: center;
     margin-top: -2rem;
 } 
 h3 {
-text-align: left;
-font-size: 1rem;
-font-family: JetBrains Mono;
-margin: 1rem;
-margin-top: -6rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: JetBrains Mono;
+    margin: 1rem;
+    margin-top: -6rem;
 }
 
 .femytext{
@@ -121,5 +121,71 @@ margin-top: -6rem;
     line-height: 1.8rem;  
     font-size: 0.8rem; 
     margin-top: 7rem;
+}
+
+.femybillede{
+    height: 16rem;  
+    width: 20rem;
+    margin: 2rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.joeandtheshitboystext{
+    text-align: justify;
+    margin: 1rem;
+    font-family: JetBrains Mono;
+    line-height: 1.8rem;  
+    font-size: 0.8rem; 
+}
+
+.joeandtheshitboysbillede {
+    height: 16rem;  
+    width: 20rem;
+    margin: 2rem;
+    border: 20px solid #215C4C;
+    text-align: center;  
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.footerbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.footerhr {
+    border-color: black;
+}
+h5 {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.lokation{
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.kontaktoplysninger{
+    line-height: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.instagramlogo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.facebooklogo {
+    width: 2rem;
+    height: 2rem;
 }
 }
