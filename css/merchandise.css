@@ -50,7 +50,6 @@ background: linear-gradient(180deg, #4BB54F, #214F22 );
     border-radius: 0.2rem; 
 }
 
-
 .menu {
     display: none; 
     background-color: #215C4C;
@@ -99,6 +98,127 @@ text-align: left;
 font-size: 1rem;
 font-family: JetBrains Mono;
 margin: 1rem;
-margin-top: -1rem;
+}
+
+.merchandiseh2 {
+    text-decoration: none;
+    color: black;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    background-color: #215C4C;
+    border-radius: 3px;
+    padding: 4px 1px;
+    position: absolute;
+    border: none;
+    box-shadow: 2px 2px 4px 2px black;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.merchandisetext{
+    text-align: justify;
+    margin: 1rem;
+    font-family: JetBrains Mono;
+    line-height: 1.8rem;  
+    font-size: 0.8rem; 
+    margin-top: 4rem;
+}
+
+.tshirts{
+    display: flex;
+}
+
+.tshirttext{
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.tshirtbillede {
+    height: 12rem;
+    width: 10rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.caps{
+    display: flex;
+}
+
+.capbillede{
+    height: 9rem;
+    width: 10rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.captext{
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.vandflaske{
+    display: flex;
+}
+
+.vandflaskebillede{
+    height: 13rem;
+    width: 10rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.flasketext{
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.footerbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.footerhr {
+    border-color: black;
+    margin-top: 3rem;
+}
+h5 {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.lokation{
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.kontaktoplysninger{
+    line-height: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.instagramlogo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.facebooklogo {
+    width: 2rem;
+    height: 2rem;
 }
 }
