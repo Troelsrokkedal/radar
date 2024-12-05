@@ -9,13 +9,16 @@
     src: url(/fonts/JetBrainsMono-Regular.ttf);
 }
 
-
 @media screen and (max-width: 391px ) {
 * {
 font-family: JetBrains Mono;
 }   
 body {
-background: linear-gradient(180deg, #4BB54F, #214F22 );
+    background: linear-gradient(
+        to bottom, 
+        #FF5733 20%,  /* Startfarve: orange */
+        #3498DB 80%   /* Slutfarve: blå */
+      );
 } 
 
 .forsidelogo {
@@ -45,20 +48,21 @@ background: linear-gradient(180deg, #4BB54F, #214F22 );
 
 .line {
     height: 0.2rem;
-    background-color: #215C4C; 
+    background-color: #214F22; 
     margin: 5px 0;
     border-radius: 0.2rem; 
 }
 
 .menu {
     display: none; 
-    background-color: #215C4C;
+    background-color: #FF5733;
     position: absolute;
     top: 5rem; 
     right: 0;
     width: 100%;
     text-align: left;
     font-family: JetBrains Mono;
+    z-index: 9999;
 }
 
 .menu ul {
@@ -105,7 +109,7 @@ margin: 1rem;
     color: black;
     font-family: JetBrains Mono;
     font-weight: bold;
-    background-color: #215C4C;
+    background-color: #214F22;
     border-radius: 3px;
     padding: 4px 1px;
     position: absolute;
@@ -221,4 +225,237 @@ p {
     width: 2rem;
     height: 2rem;
 }
+}
+
+
+
+
+
+
+@media (min-width: 392px) and (max-width: 768px) {
+* {
+    font-family: JetBrains Mono;
+}
+
+body {
+    background: linear-gradient(
+        to bottom, 
+        #FF5733 20%,  
+        #3498DB 80%   
+      );
+}
+
+.forsidelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    margin: auto; 
+    padding-top: 1rem;
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+.line {
+    height: 0.2rem;
+    background-color: #214F22; 
+    margin: 5px 0;
+    border-radius: 0.2rem; 
+}
+
+.menu {
+    display: none; 
+    background-color: #FF5733;
+    position: absolute;
+    top: 5rem; 
+    right: 0;
+    width: 100%;
+    text-align: left;
+    font-family: JetBrains Mono;
+    z-index: 9999;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 1.5rem;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.burger-checkbox:checked + .burger + .menu {
+    display: block;
+}
+
+.menuhr {
+    border-color: black;
+    margin: 1rem;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: JetBrains Mono;
+    margin: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: JetBrains Mono;
+    margin: 1rem;
+}
+
+.merchandiseh2 {
+    text-decoration: none;
+    color: black;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    background-color: #214F22;
+    border-radius: 3px;
+    padding: 4px 1px;
+    border: none;
+    box-shadow: 2px 2px 4px 2px black;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.merchandisetext{
+    text-align: justify;
+    margin: 1rem;
+    font-family: JetBrains Mono;
+    line-height: 1.8rem;  
+    font-size: 0.8rem; 
+    margin-top: 2rem;
+}
+
+.tshirts{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tshirttext{
+    display: flex;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.tshirtbillede {
+    height: 18rem;
+    width: 16rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.caps{
+    display: flex;
+    justify-content: space-around;
+}
+
+.capbillede{
+    height: 15rem;
+    width: 16rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.captext{
+    display: flex;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.vandflaske{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vandflaskebillede{
+    height: 19rem;
+    width: 16rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.flasketext{
+    display: flex;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    justify-content: space-around;
+}
+
+.footerbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.footerhr {
+    border-color: black;
+    margin-top: 3rem;
+}
+h5 {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.lokation{
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.kontaktoplysninger{
+    line-height: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.instagramlogo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.facebooklogo {
+    width: 2rem;
+    height: 2rem;
+}
+    
+
+
+
+
+
+
 }
