@@ -245,6 +245,10 @@ p {
     width: 2rem;
     height: 2rem;
 }
+.somelogo{
+    display: flex;
+    justify-content: space-evenly;
+}
 }
 
 
@@ -488,8 +492,230 @@ p {
         width: 2rem;
         height: 2rem;
     }
+    .somelogo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 
 
 
+
+
+@media (min-width: 769px) {
+    * {
+        font-family: JetBrains Mono;
+    }
+    
+    body {
+        background: linear-gradient(
+            to bottom, 
+            #FF5733 20%,  /* Startfarve: orange */
+            #3498DB 80%   /* Slutfarve: blå */
+          );
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+  .forsidelogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 110px;
+        margin-left: 3rem; 
+        padding-top: 1rem;
+  }
+    
+  .burger-checkbox {
+        display: none;
+  }
+    
+  .menu{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0.1rem;
+  }
+
+  .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu ul li{
+    padding: 1rem;
+  }
+
+  .menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+    
+    .menuhr {
+        border-color: black;
+        margin: 1rem;
+        
+    }
+    
+    h2 {
+        text-align: left;
+        font-size: 1.2rem;
+        font-family: JetBrains Mono;
+        margin: 1rem;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: JetBrains Mono;
+        margin: 1rem;
+        margin-top: -1rem;
+    }
+    
+    .frivilligh2 {
+        text-decoration: none;
+        color: black;
+        font-family: JetBrains Mono;
+        font-weight: bold;
+        background-color: #214F22;
+        border-radius: 3px;
+        padding: 4px 1px;
+        border: none;
+        box-shadow: 2px 2px 4px 2px black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .frivilligtext1{
+        text-align: justify;
+        margin: 1rem;
+        font-family: JetBrains Mono;
+        line-height: 1.8rem;  
+        font-size: 0.8rem; 
+        margin-top: 2rem;
+    }
+    
+    h4 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: JetBrains Mono;
+        margin-top: 0.8rem; 
+    }
+    
+    .frivilligbillede123 {
+        position: relative;
+        width: 275px;
+        height: 325px;
+    }
+    
+    .mand{
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: 5rem;
+    }
+    
+    .blae{
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: -11rem;
+        
+    }
+    
+    .pige {
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: -27rem;
+        
+    }
+    
+    .frivilligh22 {
+        text-decoration: none;
+        color: black;
+        font-family: JetBrains Mono;
+        font-weight: bold;
+        background-color: #214F22;
+        border-radius: 3px;
+        padding: 4px 1px;
+        border: none;
+        box-shadow: 2px 2px 4px 2px black;
+        text-align: center;
+        margin-top: -10rem;
+    }
+    
+    .frivilligtext2{
+        text-align: justify;
+        margin: 1rem;
+        font-family: JetBrains Mono;
+        line-height: 1.8rem;  
+        font-size: 0.8rem; 
+        margin-top: 2rem;
+    }
+    
+    .frivillig4 {
+        height: 18rem;
+        width: 46rem;
+        margin: 1rem;
+    }
+    
+    
+    .footerbox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem;
+        margin-top: 1rem;
+    }
+    
+    .footerhr {
+        border-color: black;
+        margin-top: 2rem;
+    }
+    h5 {
+        line-height: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .lokation{
+        line-height: 2rem;
+        text-align: center;
+    
+    }
+    
+    .kontaktoplysninger{
+        line-height: 2rem;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+    
+    .instagramlogo {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .facebooklogo {
+        width: 2rem;
+        height: 2rem;
+    }
+    .somelogo{
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 }
