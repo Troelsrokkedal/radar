@@ -9,6 +9,7 @@
     src: url(/fonts/JetBrainsMono-Regular.ttf);
 }
 
+
 @media screen and (max-width: 391px ) {
 * {
 font-family: JetBrains Mono;
@@ -16,8 +17,8 @@ font-family: JetBrains Mono;
 body {
     background: linear-gradient(
         to bottom, 
-        #FF5733 20%,  /* Startfarve: orange */
-        #3498DB 80%   /* Slutfarve: blå */
+        #FF5733 20%,  
+        #3498DB 80%   
       );
 } 
 
@@ -110,9 +111,10 @@ text-align: left;
 font-size: 1rem;
 font-family: JetBrains Mono;
 margin: 1rem;
+margin-top: -1rem;
 }
 
-.merchandiseh2 {
+.frivilligh2 {
     text-decoration: none;
     color: black;
     font-family: JetBrains Mono;
@@ -124,82 +126,68 @@ margin: 1rem;
     border: none;
     box-shadow: 2px 2px 4px 2px black;
     text-align: center;
-    margin-top: -1rem;
+    margin-top: -5rem;
 }
 
-.merchandisetext{
+.frivilligtext1{
     text-align: justify;
     margin: 1rem;
     font-family: JetBrains Mono;
     line-height: 1.8rem;  
     font-size: 0.8rem; 
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
-.tshirts{
-    display: flex;
+h4 {
+    text-align: left;
+    font-size: 1rem;
+    font-family: JetBrains Mono;
+    margin-top: 0.8rem; 
 }
 
-.tshirttext{
-    display: flex;
-    font-size: 0.7rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
+.frivilligbillede123 {
+    position: relative;
+    width: 275px;
+    height: 325px;
 }
 
-.tshirtbillede {
-    height: 12rem;
-    width: 10rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
+.mand{
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 1rem;
+    right: 5rem;
 }
 
-.caps{
-    display: flex;
+.blae{
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 7rem;
+    right: -5rem;
+    
 }
 
-.capbillede{
-    height: 9rem;
-    width: 10rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
-
-.captext{
-    display: flex;
-    font-size: 0.7rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
-}
-
-.vandflaske{
-    display: flex;
-}
-
-.vandflaskebillede{
-    height: 13rem;
-    width: 10rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
-
-.flasketext{
-    display: flex;
-    font-size: 0.7rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
+.pige {
+    position: absolute;
+    height: 7rem;
+    width: 11rem;
+    top: 13rem;
+    right: 5rem;
+    
 }
 
 .footerbox {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
+    margin: 3rem;
+    margin-top: 1rem;
 }
 
 .footerhr {
     border-color: black;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 h5 {
     line-height: 2rem;
@@ -245,239 +233,226 @@ p {
 
 
 @media (min-width: 392px) and (max-width: 768px) {
-* {
-    font-family: JetBrains Mono;
-}
-
-body {
-    background: linear-gradient(
-        to bottom, 
-        #FF5733 20%,  
-        #3498DB 80%   
-      );
-}
-
-.forsidelogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 90px;
-    margin: auto; 
-    padding-top: 1rem;
-}
-.line {
-    height: 0.2rem;
-    background-color: #214F22; 
-    margin: 5px 0;
-    border-radius: 0.2rem; 
-}
-
-.burger-checkbox {
-    display: none;
-}
-
-.burger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-    width: 3rem;
-    margin: 0.5rem;
+    * {
+        font-family: JetBrains Mono;
+    }
+    
+    body {
+        background: linear-gradient(
+            to bottom, 
+            #FF5733 20%,  
+            #3498DB 80%   
+          );
     }
 
-.menubar {
-    display: none; 
-    background-color: #FF5733;
-    position: absolute;
-    top: 5rem; 
-    right: 0;
-    width: 100%;
-    text-align: left;
-    font-family: JetBrains Mono;
-    z-index: 9999;
-}
+    .forsidelogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 90px;
+        margin: auto; 
+        padding-top: 1rem;
+    }
+    .line {
+        height: 0.2rem;
+        background-color: #214F22; 
+        margin: 5px 0;
+        border-radius: 0.2rem; 
+    }
 
-.burger-checkbox:checked + .burger + .menubar {
-    display: block;
-}
+    .burger-checkbox {
+        display: none;
+    }
 
-.menubar ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-}
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        width: 3rem;
+        margin: 0.5rem;
+        }
 
-.menubar ul li {
-    text-align: center;
-}
+    .menubar {
+        display: none; 
+        background-color: #FF5733;
+        position: absolute;
+        top: 5rem; 
+        right: 0;
+        width: 100%;
+        text-align: left;
+        font-family: JetBrains Mono;
+        z-index: 9999;
+    }
 
-.submenu {
-    position: static;
-    padding: 0;
-}
+    .burger-checkbox:checked + .burger + .menubar {
+        display: block;
+    }
 
-.menubar ul li:hover .submenu {
-    display: none; 
-}
+    .menubar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
 
-.submenu ul li {
-    text-align: left;
-    padding: 0.5rem 1rem;
-}
+    .menubar ul li {
+        text-align: center;
+    }
 
-.menuhr {
-    border-color: black;
-    margin: 1rem;
+    .submenu {
+        position: static;
+        padding: 0;
+    }
+
+    .menubar ul li:hover .submenu {
+        display: none; 
+    }
+
+    .submenu ul li {
+        text-align: left;
+        padding: 0.5rem 1rem;
+    }
+    .menuhr {
+        border-color: black;
+        margin: 1rem;
+        
+    }
     
+    h2 {
+        text-align: left;
+        font-size: 1.2rem;
+        font-family: JetBrains Mono;
+        margin: 1rem;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: JetBrains Mono;
+        margin: 1rem;
+        margin-top: -1rem;
+    }
+    
+    .frivilligh2 {
+        text-decoration: none;
+        color: black;
+        font-family: JetBrains Mono;
+        font-weight: bold;
+        background-color: #214F22;
+        border-radius: 3px;
+        padding: 4px 1px;
+        border: none;
+        box-shadow: 2px 2px 4px 2px black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .frivilligtext1{
+        text-align: justify;
+        margin: 1rem;
+        font-family: JetBrains Mono;
+        line-height: 1.8rem;  
+        font-size: 0.8rem; 
+        margin-top: 2rem;
+    }
+    
+    h4 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: JetBrains Mono;
+        margin-top: 0.8rem; 
+    }
+    
+    .frivilligbillede123 {
+        position: relative;
+        width: 275px;
+        height: 325px;
+    }
+    
+    .mand{
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: 5rem;
+    }
+    
+    .blae{
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: -11rem;
+        
+    }
+    
+    .pige {
+        position: absolute;
+        height: 7rem;
+        width: 11rem;
+        top: 1rem;
+        right: -27rem;
+        
+    }
+    
+    .footerbox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem;
+        margin-top: -1rem;
+    }
+    
+    .footerhr {
+        border-color: black;
+        margin-top: -10rem;
+    }
+    h5 {
+        line-height: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .lokation{
+        line-height: 2rem;
+        text-align: center;
+    
+    }
+    
+    .kontaktoplysninger{
+        line-height: 2rem;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+    
+    .instagramlogo {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .facebooklogo {
+        width: 2rem;
+        height: 2rem;
+    }
+    .somelogo{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
-h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: JetBrains Mono;
-    margin: 1rem;
-}
 
-h3 {
-    text-align: center;
-    font-size: 1rem;
-    font-family: JetBrains Mono;
-    margin: 1rem;
-}
 
-.merchandiseh2 {
-    text-decoration: none;
-    color: black;
-    font-family: JetBrains Mono;
-    font-weight: bold;
-    background-color: #214F22;
-    border-radius: 3px;
-    padding: 4px 1px;
-    border: none;
-    box-shadow: 2px 2px 4px 2px black;
-    text-align: center;
-    margin-top: 1rem;
-}
 
-.merchandisetext{
-    text-align: justify;
-    margin: 1rem;
-    font-family: JetBrains Mono;
-    line-height: 1.8rem;  
-    font-size: 0.8rem; 
-    margin-top: 2rem;
-}
 
-.tshirts{
-    display: flex;
-    justify-content: space-around;
-}
-
-.tshirttext{
-    display: flex;
-    font-size: 1rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
-}
-
-.tshirtbillede {
-    height: 18rem;
-    width: 16rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
-
-.caps{
-    display: flex;
-    justify-content: space-around;
-}
-
-.capbillede{
-    height: 15rem;
-    width: 16rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
-
-.captext{
-    display: flex;
-    font-size: 1rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
-}
-
-.vandflaske{
-    display: flex;
-    justify-content: space-around;
-}
-
-.vandflaskebillede{
-    height: 19rem;
-    width: 16rem;
-    margin: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
-
-.flasketext{
-    display: flex;
-    font-size: 1rem;
-    margin-top: -0.5rem;
-    justify-content: space-around;
-}
-
-.footerbox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.footerhr {
-    border-color: black;
-    margin-top: 3rem;
-}
-h5 {
-    line-height: 2rem;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-.lokation{
-    line-height: 2rem;
-    text-align: center;
-
-}
-
-.kontaktoplysninger{
-    line-height: 2rem;
-    text-align: center;
-}
-
-p {
-    font-size: 0.8rem;
-}
-
-.instagramlogo {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
-}
-
-.facebooklogo {
-    width: 2rem;
-    height: 2rem;
-}
-.somelogo{
-    display: flex;
-    justify-content: space-evenly;
-}
-}
-
-@media (min-width: 769px)  {
+@media (min-width: 769px) {
     * {
         font-family: JetBrains Mono;
     }
@@ -489,6 +464,7 @@ p {
             #3498DB 80%   /* Slutfarve: blå */
           );
     }
+
     .burger-checkbox {
         display: none;
   }
@@ -594,20 +570,21 @@ p {
     }
     
     h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: JetBrains Mono;
-        margin: 4rem;
-    }
-    
-    h3 {
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: left;
+        font-size: 1.2rem;
         font-family: JetBrains Mono;
         margin: 1rem;
     }
     
-    .merchandiseh2 {
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: JetBrains Mono;
+        margin: 1rem;
+        margin-top: -1rem;
+    }
+    
+    .frivilligh2 {
         text-decoration: none;
         color: black;
         font-family: JetBrains Mono;
@@ -618,75 +595,61 @@ p {
         border: none;
         box-shadow: 2px 2px 4px 2px black;
         text-align: center;
-        margin-top: 1rem;
+        margin: 4rem;
+        margin-top: -0.1rem;
+        font-size: 1.5rem;
+
     }
     
-    .merchandisetext{
+    .frivilligtext1{
         text-align: justify;
-        margin: 4rem;
+        margin: 1rem;
         font-family: JetBrains Mono;
         line-height: 1.8rem;  
         font-size: 1rem; 
         margin-top: 2rem;
+        margin: 2rem;
     }
     
-    .tshirts{
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .tshirttext{
-        display: flex;
+    h4 {
+        text-align: center;
         font-size: 1rem;
-        margin-top: 0.5rem;
-        justify-content: space-around;
+        font-family: JetBrains Mono;
+        margin-top: 0.8rem; 
     }
     
-    .tshirtbillede {
-        height: 24rem;
-        width: 22rem;
-        margin: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+    .frivilligbillede123 {
+        position: relative;
+        width: 275px;
+        height: 325px;
     }
     
-    .caps{
-        display: flex;
-        justify-content: space-around;
+    .mand{
+        position: absolute;
+        height: 14rem;
+        width: 18rem;
+        top: 1rem;
+        right: -6rem;
     }
     
-    .capbillede{
-        height: 21rem;
-        width: 22rem;
-        margin: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+    .blae{
+        position: absolute;
+        height: 14rem;
+        width: 18rem;
+        top: 1rem;
+        right: -34rem;
+        
     }
     
-    .captext{
-        display: flex;
-        font-size: 2rem;
-        margin-top: 0.5rem;
-        justify-content: space-around;
+    .pige {
+        position: absolute;
+        height: 14rem;
+        width: 18rem;
+        top: 1rem;
+        right: -63rem;
+        
     }
     
-    .vandflaske{
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .vandflaskebillede{
-        height: 25rem;
-        width: 22rem;
-        margin: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
-    }
-    
-    .flasketext{
-        display: flex;
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        justify-content: space-around;
-    }
-  
     .footerbox {
         display: flex;
         align-items: center;
@@ -697,7 +660,7 @@ p {
     
     .footerhr {
         border-color: black;
-        margin-top: 10rem;
+        margin-top: -2rem;
     }
     h5 {
         line-height: 2rem;

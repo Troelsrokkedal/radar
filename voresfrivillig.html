@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.webp" type="image/webp">
     <title>Frivillig</title>
-    <link rel="stylesheet" href="css/frivillig.css">
+    <link rel="stylesheet" href="css/voresfrivillig.css">
 </head>
 <body>
     <header class="navbar">
-        <a href="index.html"><img class="forsidelogo" src="images/logo.webp" alt="logo"></a>
-    
+        
         <input type="checkbox" id="burger-toogle" class="burger-checkbox"> 
 
         <label for="burger-toogle" class="burger">
@@ -18,17 +17,48 @@
         <span class="line"></span>
         <span class="line"></span>
     </label>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="koncert.html">Koncert</a></li>
-            <li><a href="frivillig.html">Frivillig</a></li>
-            <li><a href="#">Kalender</a></li>
-            <li><a href="merchandise.html">Merchandise</a></li>
-        </ul>
-    </nav>
-    
+            <li><a href="index.html">
+                <div class="logo"> <!--giver den en class, så jeg kan style den i css-->
+                    <img src="images/logo.webp" alt="logo" class="forsidelogo">
+                </div>
+            </a>
+            </li>  
+            <nav class="menubar"> 
+            <ul>
+                <li class="active"><a href="#">Artister</a>
+                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
+                        <ul>
+                        <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
+                        <li class="hoverme"><a href="#">Koncerter</a></li>
+                        <li class="hoverme"><a href="#">Galleri</a></li>
+                        </ul> 
+                    </div>
+                </li>
+                <li><a href="#">Frivillig</a>
+                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
+                        <ul>
+                            <li><a href="voresfrivillig.html">Vores frivillige</a></li>
+                            <li><a href="#">Info om frivillige</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
+                            <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
+                        </ul>
+                        </div>      
+                <li><a href="#">Kalender</a>
+                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
+                        <ul>
+                            <li><a href="#">Kommende Koncerter</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
+                            <li><a href="#">Andre Events</a></li>
+                            <li><a href="#">Booking</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#">Merchandise</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="merchandise.html">Merchandise</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
+                        </ul>
+                    </div>
+                </li>    
+            </ul>
+        </nav>
     </header>
     <hr class="menuhr">
     <main>
@@ -44,18 +74,6 @@
                 <img class="blae" src="images/frivillig2.webp" alt="frivillig2">
                 <img class="pige" src="images/frivillig3.webp" alt="frivillig3">
             </section>
-        </section>
-
-        <section>
-            <section class="frivilligtextbox">
-                <h2 class="frivilligh22">Bliv Frivillig på Radar – En Del af Aarhus’ Kulturscene</h2>
-                <article class="frivilligtext2">
-                    Som frivillig på Radar bliver du en del af hjertet i Aarhus’ musik- og kulturliv. Du hjælper med alt fra publikumsmodtagelse og bararbejde til sceneteknik, mens du kommer helt tæt på musikken.
-                    Det er en unik mulighed for at få erfaring, møde andre kulturinteresserede og blive en del af et passioneret fællesskab. </article>
-                    <h3>Bliv en del af noget større – bliv frivillig på Radar!</h3>
-            </section>
-                <img src="images/frivillig4.webp" alt="frivillig4" class="frivillig4">
-                <div class="green-box"></div>
         </section>
     </main>
     <footer>
@@ -74,14 +92,12 @@
             <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
             <p>Generel kontakt: kontakt(@)radarlive.dk</p>
         </section>
-            <h5 class="socialemedier">Sociale Medier</h5>
-            <section>
+        <section class="socialemedier">
+            <h5>Sociale Medier</h5>
+            <section class="somelogo">
             <a href="https://www.instagram.com/radarlive/"> <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo"></a>
             <a href="https://www.facebook.com/radarlive"><img src="images/facebooklogo.webp" class="facebooklogo" alt=""></a>
             </section>
-            
-    
-        </section>
         </footer>
     </body>
     </html>

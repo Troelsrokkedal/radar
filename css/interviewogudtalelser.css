@@ -31,6 +31,12 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
+.line {
+    height: 0.2rem;
+    background-color: #214F22; 
+    margin: 5px 0;
+    border-radius: 0.2rem; 
+}
 
 .burger-checkbox {
     display: none;
@@ -41,20 +47,13 @@ body {
     flex-direction: column;
     cursor: pointer;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 1rem;
     width: 3rem;
     margin: 0.5rem;
-}
+    }
 
-.line {
-    height: 0.2rem;
-    background-color: #215C4C; 
-    margin: 5px 0;
-    border-radius: 0.2rem; 
-}
-
-.menu {
+.menubar {
     display: none; 
     background-color: #FF5733;
     position: absolute;
@@ -66,23 +65,32 @@ body {
     z-index: 9999;
 }
 
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    padding: 1.5rem;
-}
-
-.menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.8rem;
+.burger-checkbox:checked + .burger + .menubar {
     display: block;
 }
 
-.burger-checkbox:checked + .burger + .menu {
-    display: block;
+.menubar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+.menubar ul li {
+    text-align: center;
+}
+
+.submenu {
+    position: static;
+    padding: 0;
+}
+
+.menubar ul li:hover .submenu {
+    display: none; 
+}
+
+.submenu ul li {
+    text-align: left;
+    padding: 0.5rem 1rem;
 }
 
 .menuhr {
@@ -236,31 +244,29 @@ p {
         margin: auto; 
         padding-top: 1rem;
     }
-    
-    .burger-checkbox {
-        display: none;
-    }
-    
-    .burger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        width: 3rem;
-        margin: 0.5rem;
-        z-index: 9999;
-    }
-    
     .line {
         height: 0.2rem;
         background-color: #214F22; 
         margin: 5px 0;
         border-radius: 0.2rem; 
     }
-    
-    .menu {
+
+    .burger-checkbox {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        width: 3rem;
+        margin: 0.5rem;
+        }
+
+    .menubar {
         display: none; 
         background-color: #FF5733;
         position: absolute;
@@ -269,25 +275,35 @@ p {
         width: 100%;
         text-align: left;
         font-family: JetBrains Mono;
+        z-index: 9999;
     }
-    
-    .menu ul {
-        list-style: none;
-    }
-    
-    .menu ul li {
-        padding: 1.5rem;
-    }
-    
-    .menu ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: 1.8rem;
+
+    .burger-checkbox:checked + .burger + .menubar {
         display: block;
     }
-    
-    .burger-checkbox:checked + .burger + .menu {
-        display: block;
+
+    .menubar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .menubar ul li {
+        text-align: center;
+    }
+
+    .submenu {
+        position: static;
+        padding: 0;
+    }
+
+    .menubar ul li:hover .submenu {
+        display: none; 
+    }
+
+    .submenu ul li {
+        text-align: left;
+        padding: 0.5rem 1rem;
     }
     
     .menuhr {
@@ -427,50 +443,106 @@ p {
           );
     }
 
+    .burger-checkbox {
+        display: none;
+  }
+    
     .navbar {
         display: flex;
         justify-content: space-around;
     }
-  .forsidelogo {
+    .forsidelogo {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 110px;
+        width: 110px;
+        height: 120px;
         margin-left: 3rem; 
         padding-top: 1rem;
   }
+    .menubar {
+        text-align: center;
+        background-color: #FF5733;
+    }
     
-  .burger-checkbox {
+    .menubar ul {
+        display:inline-flex;
+        color:#FF5733;
+        padding-top: 5rem;
+    }
+    
+    .menubar ul li {
+        width: 220px;
+        margin: 15px;
+        padding: 15px;  
+        list-style: none;
+    }
+    
+    .menubar ul li a {
+        transition: color 0.3s;
+    }
+    
+    .menubar ul li a:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .menubar ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .submenu {
         display: none;
-  }
+    }
     
-  .menu{
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 0.1rem;
-  }
-
-  .menu ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu ul li{
-    padding: 1rem;
-  }
-
-  .menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+    .menubar ul li:hover .submenu {
+        display: block;
+        position:absolute;
+        background-color: #FF5733;
+        margin-top: 15px;
+        margin-left: -15px;
+    }
     
+    .menubar ul li:hover .submenu ul {
+        display: block;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    
+    .menubar ul li:hover .submenu ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px solid black
+    }
+    
+    .menubar ul li:hover .submenu ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .menubar ul li:hover .submenu ul li a {
+        transition: color 0.3s;
+    }
+    
+    .menubar ul li:hover .submenu ul li a:hover {
+        color: black;
+    }
+    
+    .submenu2 {
+        display: none;
+    }
+    
+    .hoverme:hover .submenu2{
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background-color: black;
+    }
+
     .menuhr {
         border-color: black;
-        margin: 1rem;
-        
+        margin: 1rem;  
     }
     
     h2 {
@@ -491,6 +563,7 @@ p {
         box-shadow: 2px 2px 4px 2px black;
         text-align: center;
         margin-top: 1rem;
+        font-size: 1.5rem;
     } 
     
     .femytext{
@@ -498,15 +571,17 @@ p {
         margin: 1rem;
         font-family: JetBrains Mono;
         line-height: 1.8rem;  
-        font-size: 0.8rem; 
+        font-size: 1rem; 
         margin-top: 2rem;
+        margin-right: 49rem;
     }
     
     .femybillede{
-        height: 20rem;  
-        width: 44rem;
-        margin: 2rem;
+        height: 16rem;
+        width: 40rem;
+        margin: 44rem;
         box-shadow: 2px 2px 4px 2px black;
+        margin-top: -18rem;
     }
     
     .h2artister1 {
@@ -520,7 +595,8 @@ p {
         border: none;
         box-shadow: 2px 2px 4px 2px black;
         text-align: center;
-        margin-top: 1rem;
+        margin-top: -40rem;
+        font-size: 1.5rem;
     } 
     
     .joeandtheshitboystext{
@@ -528,28 +604,31 @@ p {
         margin: 1rem;
         font-family: JetBrains Mono;
         line-height: 1.8rem;  
-        font-size: 0.8rem; 
+        font-size: 1rem; 
         margin-top: 2rem;
     }
     
     .joeandtheshitboysbillede {
-        height: 20rem;  
-        width: 44rem;
-        margin: 2rem;
+        height: 30rem;
+        width: 54rem;
+        margin: 18rem;
+        margin-top: 2rem;
         border: 20px solid #214F22;
-        text-align: center;  
+        text-align: center;
         box-shadow: 2px 2px 4px 2px black;
     }
-    
+  
     .footerbox {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         margin: 1rem;
+        justify-content: space-evenly;
     }
     
     .footerhr {
         border-color: black;
+        margin-top: -12rem;
     }
     h5 {
         line-height: 2rem;
@@ -560,6 +639,7 @@ p {
     .lokation{
         line-height: 2rem;
         text-align: center;
+    
     }
     
     .kontaktoplysninger{
@@ -582,6 +662,7 @@ p {
         width: 2rem;
         height: 2rem;
     }
+
     .somelogo{
         display: flex;
         justify-content: space-evenly;

@@ -31,6 +31,12 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
+.line {
+    height: 0.2rem;
+    background-color: #214F22; 
+    margin: 5px 0;
+    border-radius: 0.2rem; 
+}
 
 .burger-checkbox {
     display: none;
@@ -41,21 +47,13 @@ body {
     flex-direction: column;
     cursor: pointer;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 1rem;
     width: 3rem;
     margin: 0.5rem;
-}
+    }
 
-.line {
-    height: 0.2rem;
-    background-color: #214F22; 
-    margin: 5px 0;
-    border-radius: 0.2rem; 
-}
-
-
-.menu {
+.menubar {
     display: none; 
     background-color: #FF5733;
     position: absolute;
@@ -67,24 +65,37 @@ body {
     z-index: 9999;
 }
 
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    padding: 1.5rem;
-}
-
-.menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.8rem;
+.burger-checkbox:checked + .burger + .menubar {
     display: block;
 }
 
-.burger-checkbox:checked + .burger + .menu {
-    display: block;
+.menubar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
 }
+
+.menubar ul li {
+    text-align: center;
+}
+
+.submenu {
+    position: static;
+    padding: 0;
+}
+
+.menubar ul li:hover .submenu {
+    display: none; 
+}
+
+.submenu ul li {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
 
 .menuhr {
     border-color: black;
@@ -223,69 +234,88 @@ p {
             #3498DB 80%   /* Slutfarve: blå */
           );
     }
+   
+body {
+    background: linear-gradient(
+        to bottom, 
+        #FF5733 20%,  
+        #3498DB 80%   
+      );
+}
 
-    .forsidelogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 90px;
-        margin: auto; 
-        padding-top: 1rem;
+.forsidelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    margin: auto; 
+    padding-top: 1rem;
+}
+.line {
+    height: 0.2rem;
+    background-color: #214F22; 
+    margin: 5px 0;
+    border-radius: 0.2rem; 
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 3rem;
+    margin: 0.5rem;
     }
-    
-    .burger-checkbox {
-        display: none;
-    }
-    
-    .burger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        width: 3rem;
-        margin: 0.5rem;
-    }
-    
-    .line {
-        height: 0.2rem;
-        background-color: #214F22; 
-        margin: 5px 0;
-        border-radius: 0.2rem; 
-    }
-    
-    .menu {
-        display: none; 
-        background-color: #FF5733;
-        position: absolute;
-        top: 5rem; 
-        right: 0;
-        width: 100%;
-        text-align: left;
-        font-family: JetBrains Mono;
-        z-index: 9999;
-    }
-    
-    .menu ul {
-        list-style: none;
-    }
-    
-    .menu ul li {
-        padding: 1.5rem;
-    }
-    
-    .menu ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: 1.8rem;
-        display: block;
-    }
-    
-    .burger-checkbox:checked + .burger + .menu {
-        display: block;
-    }
+
+.menubar {
+    display: none; 
+    background-color: #FF5733;
+    position: absolute;
+    top: 5rem; 
+    right: 0;
+    width: 100%;
+    text-align: left;
+    font-family: JetBrains Mono;
+    z-index: 9999;
+}
+
+.burger-checkbox:checked + .burger + .menubar {
+    display: block;
+}
+
+.menubar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+.menubar ul li {
+    text-align: center;
+}
+
+.submenu {
+    position: static;
+    padding: 0;
+}
+
+.menubar ul li:hover .submenu {
+    display: none; 
+}
+
+.submenu ul li {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+
+
     
     .menuhr {
         border-color: black;
@@ -421,46 +451,104 @@ p {
             #3498DB 80%   /* Slutfarve: blå */
           );
     }
-  .navbar {
-        display: flex;
-        justify-content: space-around;
-    }
-  .forsidelogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        height: 110px;
-        margin-left: 3rem; 
-        padding-top: 1rem;
-  }
-    
-  .burger-checkbox {
+    .burger-checkbox {
         display: none;
   }
     
-  .menu{
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 0.1rem;
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+    .forsidelogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 120px;
+        margin-left: 3rem; 
+        padding-top: 1rem;
   }
-
-  .menu ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu ul li{
-    padding: 1rem;
-  }
-
-  .menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+    .menubar {
+        text-align: center;
+        background-color: #FF5733;
+    }
     
+    .menubar ul {
+        display:inline-flex;
+        color:#FF5733;
+        padding-top: 5rem;
+    }
+    
+    .menubar ul li {
+        width: 220px;
+        margin: 15px;
+        padding: 15px;  
+        list-style: none;
+    }
+    
+    .menubar ul li a {
+        transition: color 0.3s;
+    }
+    
+    .menubar ul li a:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .menubar ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .submenu {
+        display: none;
+    }
+    
+    .menubar ul li:hover .submenu {
+        display: block;
+        position:absolute;
+        background-color: #FF5733;
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+    
+    .menubar ul li:hover .submenu ul {
+        display: block;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    
+    .menubar ul li:hover .submenu ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px solid black
+    }
+    
+    .menubar ul li:hover .submenu ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .menubar ul li:hover .submenu ul li a {
+        transition: color 0.3s;
+    }
+    
+    .menubar ul li:hover .submenu ul li a:hover {
+        color: black;
+    }
+    
+    .submenu2 {
+        display: none;
+    }
+    
+    .hoverme:hover .submenu2{
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background-color: black;
+    }
+
+
     .menuhr {
         border-color: black;
         margin: 1rem;
