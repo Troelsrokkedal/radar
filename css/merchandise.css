@@ -61,7 +61,7 @@ body {
     width: 100%;
     text-align: left;
     font-family: JetBrains Mono;
-    z-index: 9999;
+    z-index: 9999 !important;
 }
 
 .burger-checkbox:checked + .burger + .menubar {
@@ -81,6 +81,7 @@ body {
 .submenu {
     position: static;
     padding: 0;
+    z-index: 9999 !important;
 }
 
 .menubar ul li:hover .submenu {
