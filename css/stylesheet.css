@@ -560,14 +560,14 @@ body {
         text-align: left;
         font-size: 3rem;
         font-family: JetBrains Mono;
-        margin: 1rem;
+        margin-left: 2rem;
     }
     
     h3 {
         text-align: left;
         font-size: 1.5rem;
         font-family: JetBrains Mono;
-        margin: 1rem;
+        margin-left: 2rem;
         margin-top: -1rem;
     }
     .forside {
