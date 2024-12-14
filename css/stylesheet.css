@@ -81,22 +81,30 @@ body {
     text-align: center;
     color: black;
     padding-top: 1rem;
+    text-decoration: none;
 }
 
 .submenu {
     display: none;
     list-style: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1.5rem;
+    padding: 0;
+    margin: 0;
     background-color: #FFA07A;
-    border-radius: 5px;
-    position: relative;
+    position: absolute;
+    top: 100%;
+    left: 0;
     z-index: 998;
-    padding-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .submenu li {
-    padding: 5px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
 }
 
 .menubar ul li:hover .submenu {
@@ -113,7 +121,7 @@ body {
 }
 
 .submenu-checkbox:checked ~ .submenu {
-    display: flex;
+    display: block;
 }
 
 /* Submenu toggle (the "+") */
@@ -129,11 +137,13 @@ body {
 
 .submenu li a {
     color: black;
+    text-decoration: none;
     font-size: 0.9rem;
 }
 
 .submenu li a:hover {
     text-decoration: underline;
+    color: #3498DB;
 }
 
 
