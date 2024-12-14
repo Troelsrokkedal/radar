@@ -63,9 +63,10 @@ body {
     text-align: left;
     font-family: JetBrains Mono;
     z-index: 9999;
+   
 }
 
-.burger-checkbox:checked + .burger + .menubar {
+.burger-checkbox:checked ~ .menubar {
     display: block;
 }
 
@@ -73,16 +74,29 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 0;
+    
 }
 
 .menubar ul li {
     text-align: center;
+    color: black;
+    padding-top: 1rem;
 }
 
 .submenu {
-    position: static;
-    padding: 0;
-    z-index: 9999 !important;
+    display: none;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+    background-color: #FFA07A;
+    border-radius: 5px;
+    position: relative;
+    z-index: 998;
+    padding-top: 1rem;
+}
+
+.submenu li {
+    padding: 5px 0;
 }
 
 .menubar ul li:hover .submenu {
@@ -94,6 +108,33 @@ body {
     padding: 0.5rem 1rem;
 }
 
+.submenu-checkbox {
+    display: none;
+}
+
+.submenu-checkbox:checked ~ .submenu {
+    display: flex;
+}
+
+/* Submenu toggle (the "+") */
+    .submenu-toggle {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: black;
+}
+
+.submenu li a {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -456,6 +497,9 @@ body {
         display: none;
   }
     
+  .submenu-checkbox{
+    display: none;
+  }
     .navbar {
         display: flex;
         justify-content: space-around;
@@ -489,10 +533,12 @@ body {
     
     .menubar ul li a {
         transition: color 0.3s;
+        
     }
     
     .menubar ul li a:hover {
         transform: scale(1.1);
+       
     }
     
     
@@ -503,6 +549,7 @@ body {
     
     .submenu {
         display: none;
+        z-index: 9999;
     }
     
     .menubar ul li:hover .submenu {
@@ -550,6 +597,10 @@ body {
     }
 
 
+
+
+
+
     .menuhr {
         border-color: black;
         margin: 1rem;
@@ -560,14 +611,14 @@ body {
         text-align: left;
         font-size: 3rem;
         font-family: JetBrains Mono;
-        margin-left: 2rem;
+        margin-left: 4rem;
     }
     
     h3 {
         text-align: left;
         font-size: 1.5rem;
         font-family: JetBrains Mono;
-        margin-left: 2rem;
+        margin-left: 4.5rem;
         margin-top: -1rem;
     }
     .forside {
