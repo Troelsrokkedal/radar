@@ -73,8 +73,7 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 0;
-    list-style: none;
-    
+    list-style: none; 
 }
 
 .menubar ul li {
@@ -98,8 +97,6 @@ body {
 .menubar ul li ul li:last-child {
     border-bottom: none;
 }
-
-
 
 .menubar ul li ul li {
     text-align: left;

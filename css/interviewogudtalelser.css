@@ -136,7 +136,7 @@ h2 {
     color: black;
     font-family: JetBrains Mono;
     font-weight: bold;
-    background-color: #215C4C;
+    background-color: #214F22;
     border-radius: 3px;
     padding: 4px 1px;
     position: absolute;
@@ -167,7 +167,7 @@ h2 {
     color: black;
     font-family: JetBrains Mono;
     font-weight: bold;
-    background-color: #215C4C;
+    background-color: #214F22;
     border-radius: 3px;
     padding: 4px 1px;
     position: absolute;
@@ -190,7 +190,7 @@ h2 {
     height: 16rem;  
     width: 20rem;
     margin: 2rem;
-    border: 20px solid #215C4C;
+    border: 20px solid #214F22;
     text-align: center;  
     box-shadow: 2px 2px 4px 2px black;
 }

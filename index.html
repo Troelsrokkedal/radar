@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Her definerer vi dokumentets sprog og sætter tegnsættet til UTF-8, så danske specialtegn vises korrekt. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon giver hjemmesiden et lille ikon i browserfanen. -->
     <link rel="icon" href="images/logo.webp" type="image/webp">
+    <!-- Titel vises som navn på browserfanen og er vigtig for brugervenlighed og SEO. -->
     <title>Radar</title>
+    <!-- Linker til vores eksterne stylesheet, så vi kan adskille struktur (HTML) og design (CSS). -->
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
     <header class="navbar">
-            <li><a href="index.html">
-                <div class="logo"> 
-                    <img src="images/logo.webp" alt="logo" class="forsidelogo">
-                </div>
-            </a>
-            </li>  
-            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
-            <label for="burger-toggle" class="burger">&#9776;</label>
-            <nav class="menubar"> 
+        <!-- Logoet linker til forsiden. God praksis for brugervenlighed. -->
+        <li><a href="index.html">
+            <div class="logo"> 
+                <img src="images/logo.webp" alt="logo" class="forsidelogo">
+            </div>
+        </a></li>  
+        <!-- Burger-menu checkbox bruges til at lave en mobilvenlig navigation. -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <!-- Label fungerer som en knap til at åbne/lukke burger-menuen. -->
+        <label for="burger-toggle" class="burger">&#9776;</label>
+        <nav class="menubar"> 
             <ul>
+                <!-- Dropdown-menuer skaber hierarki og gør navigationen overskuelig. -->
                 <li><a href="#">Artister</a>
-                        <ul>
+                    <ul>
+                        <!-- Klasse "hoverme" antyder, at der er en hover-effekt på menuen. -->
                         <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
                         <li class="hoverme"><a href="#">Koncerter</a></li>
                         <li class="hoverme"><a href="#">Galleri</a></li>
-                        </ul> 
+                    </ul>
                 </li>
                 <li><a href="#">Frivillig</a>
-                    
-                        <ul>
-                            <li><a href="voresfrivillig.html">Vores frivillige</a></li>
-                            <li><a href="#">Info om frivillige</a></li> 
-                            <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
-                        </ul>
-                            
+                    <ul>
+                        <!-- Sider om frivillige giver brugerne mulighed for at blive en del af fællesskabet. -->
+                        <li><a href="voresfrivillig.html">Vores frivillige</a></li>
+                        <li><a href="#">Info om frivillige</a></li> 
+                        <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Kalender</a>
-                
-                        <ul>
-                            <li><a href="#">Kommende Koncerter</a></li> 
-                            <li><a href="#">Andre Events</a></li>
-                            <li><a href="#">Booking</a></li>
-                        </ul>
-                    
+                    <ul>
+                        <!-- Inddelt kalender gør det nemt for brugere at finde events. -->
+                        <li><a href="#">Kommende Koncerter</a></li> 
+                        <li><a href="#">Andre Events</a></li>
+                        <li><a href="#">Booking</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Merchandise</a>
-                    
-                        <ul>
-                            <li><a href="merchandise.html">Merchandise</a></li> 
-                        </ul>
-                
+                    <ul>
+                        <!-- En dedikeret merchandise-side kan hjælpe med at generere indtægter. -->
+                        <li><a href="merchandise.html">Merchandise</a></li> 
+                    </ul>
                 </li>    
             </ul>
         </nav>
     </header>
-   
+    <!-- Adskiller navigation fra hovedindhold med en horisontal linje. -->
     <hr class="menuhr">
     <main>
+        <!-- Bruger overskrifter for at opdele siden i sektioner og gøre det overskueligt. -->
         <h2>Velkommen til Radar</h2>
         <h3>Musik og Kultur i Hjertet af Aarhus!</h3>
         <section class="forside">
-           
-            <article class="forsidetext">Radar er et unikt spillested i Aarhus, hvor musikken og kulturen mødes. Her skaber vi rammerne for både etablerede kunstnere og nye talenter, der tør eksperimentere og udfordre deres kunst. Med et program, der spænder fra lokale upcoming bands til internationale navne, tilbyder vi unikke oplevelser for nysgerrige sjæle.
+            <!-- Her præsenteres stedet med et introduktionstekst. -->
+            <article class="forsidetext">
+                Radar er et unikt spillested i Aarhus, hvor musikken og kulturen mødes. Her skaber vi rammerne for både etablerede kunstnere og nye talenter, der tør eksperimentere og udfordre deres kunst. Med et program, der spænder fra lokale upcoming bands til internationale navne, tilbyder vi unikke oplevelser for nysgerrige sjæle.
                 Vores fundament er bygget på fællesskab, kreativitet og bæredygtighed. Radar er ikke bare et sted, men et fællesskab, hvor kunstnere, frivillige og publikum mødes for at skabe noget særligt. Frivilligheden er hjertet i vores arbejde – et dedikeret team af engagerede mennesker gør hver koncert til noget helt særligt, samtidig med at de lærer og udvikler sig undervejs.
                 Vi er stolte af at støtte den aarhusianske musikscene. Radar giver upcoming artister en scene, mens vi styrker kulturen i byen gennem samarbejde med lokale aktører og festivaler. Sammen er vi med til at gøre Aarhus til en levende og dynamisk kulturby.
-                Oplev Radar – som publikum, frivillig eller artist – og bliv en del af vores fællesskab. </article>
-                <section class="forsidebilleder">
-                    <img src="images/forsidebillede.webp" alt="forsidebillede" class="forsidebillede">
-                    <img src="images/forsidebillede1.webp" alt="forsidebillede1" class="forsidebillede1">
-                    <img src="images/forsidebillede2.webp" alt="forsidebillede2" class="forsidebillede2">
-                </section>
-            
+                Oplev Radar – som publikum, frivillig eller artist – og bliv en del af vores fællesskab.
+            </article>
+            <!-- Tilføjer billeder til at supplere teksten og gøre siden mere visuel. -->
+            <section class="forsidebilleder">
+                <img src="images/forsidebillede.webp" alt="forsidebillede" class="forsidebillede">
+                <img src="images/forsidebillede1.webp" alt="forsidebillede1" class="forsidebillede1">
+                <img src="images/forsidebillede2.webp" alt="forsidebillede2" class="forsidebillede2">
+            </section>
         </section>
         <h4>Radar – hvor musikken og kulturen mødes.</h4>
     </main>
     <footer>
-    <hr class="footerhr">
-    <section class="footerbox">
-
-    <section class="lokation">
-        <h5>Adresse</h5>
-        <p>Karen Wegeners Gade 6</p>
-        <p>DK 8000 Aarhus C</p>
-    </section>
-
-    <section class="kontaktoplysninger">
-        <h5>Kontaktoplysninger</h5>
-        <p>Telefon +45 8676 0344</p>
-        <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
-        <p>Generel kontakt: kontakt(@)radarlive.dk</p>
-    </section>
-    <section class="socialemedier">
-        <h5>Sociale Medier</h5>
-        <section class="somelogo">
-        <a href="https://www.instagram.com/radarlive/"> <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo"></a>
-        <a href="https://www.facebook.com/radarlive"><img src="images/facebooklogo.webp" class="facebooklogo" alt=""></a>
+        <!-- Adskiller hovedindhold fra footer med en horisontal linje. -->
+        <hr class="footerhr">
+        <section class="footerbox">
+            <!-- Angiver kontaktinformation og adresse for stedet. -->
+            <section class="lokation">
+                <h5>Adresse</h5>
+                <p>Karen Wegeners Gade 6</p>
+                <p>DK 8000 Aarhus C</p>
+            </section>
+            <section class="kontaktoplysninger">
+                <h5>Kontaktoplysninger</h5>
+                <p>Telefon +45 8676 0344</p>
+                <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
+                <p>Generel kontakt: kontakt(@)radarlive.dk</p>
+            </section>
+            <!-- Tilføjer links til sociale medier for at forbedre brugerens engagement. -->
+            <section class="socialemedier">
+                <h5>Sociale Medier</h5>
+                <section class="somelogo">
+                    <a href="https://www.instagram.com/radarlive/">
+                        <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo">
+                    </a>
+                    <a href="https://www.facebook.com/radarlive">
+                        <img src="images/facebooklogo.webp" class="facebooklogo" alt="facebooklogo">
+                    </a>
+                </section>
+            </section>
         </section>
     </footer>
 </body>
