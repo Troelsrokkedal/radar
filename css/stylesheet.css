@@ -9,7 +9,6 @@
     src: url(/fonts/JetBrainsMono-Regular.ttf);
 }
 
-
 @media (max-width: 391px ) {
 * {
 font-family: JetBrains Mono;
@@ -81,7 +80,11 @@ body {
     color: black;
     padding-top: 1rem;
     text-decoration: none;
-   
+}
+
+.menubar ul li a{
+    color: black;
+    text-decoration: none;
 }
 
 .menubar ul li ul{
@@ -90,12 +93,7 @@ body {
 
 .menubar ul li ul li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
     color: black;
-}
-
-.menubar ul li ul li:last-child {
-    border-bottom: none;
 }
 
 .menubar ul li ul li {
@@ -270,15 +268,6 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
-.forsidelogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 70px;
-    margin: auto; 
-    padding-top: 1rem;
-}
 
 .burger-checkbox {
     display: none;
@@ -332,7 +321,11 @@ body {
     color: black;
     padding-top: 1rem;
     text-decoration: none;
-   
+}
+
+.menubar ul li a{
+    color: black;
+    text-decoration: none;
 }
 
 .menubar ul li ul{
@@ -341,7 +334,6 @@ body {
 
 .menubar ul li ul li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
     color: black;
 }
 
