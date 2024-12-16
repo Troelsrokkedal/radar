@@ -1,62 +1,97 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> 
+<!-- Dokumenttype angiver, at dette er en HTML5-side -->
+<!-- 'lang="da"' fortæller, at sproget på siden er dansk -->
+
 <head>
+    <!-- Metadata og information til browser og søgemaskiner -->
     <meta charset="UTF-8">
+    <!-- Indstiller tegnkodning til UTF-8, som understøtter danske bogstaver -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sikrer, at siden vises korrekt på mobil og tablets -->
     <link rel="icon" href="images/favicon.png" sizes="64x64" type="image/png">
+    <!-- Tilføjer et ikon, der vises i browserfanen -->
     <title>Vores Frivillige</title>
+    <!-- Sæt sidens titel, som vises i browserfanen -->
     <link rel="stylesheet" href="css/voresfrivillig.css">
-    <meta name="beskrivelse" content="et website for spillestedetv Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Linker til den eksterne CSS-fil, der styrer sidens layout og stil -->
+    <meta name="beskrivelse" content="et website for spillestedet Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Giver en kort beskrivelse af siden til søgemaskiner -->
     <meta name="keywords" content="frivillig, koncert, kultur, merchandise, musik, interview">
+    <!-- Angiver nøgleord, som hjælper søgemaskiner med at indeksere siden -->
 </head>
+
 <body>
+    <!-- Alt indhold på siden vises her -->
+
+    <!-- HEADER -->
     <header class="navbar">
-        <a href="index.html"><img src="images/logo.webp" alt="logo" class="forsidelogo"></a>
+        <!-- Dette er navigationen, som vises øverst på siden -->
+        <a href="index.html">
+            <img src="images/logo.webp" alt="logo" class="forsidelogo">
+            <!-- Logoet linker til forsiden -->
+        </a>
         <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <!-- Et skjult checkbox-element bruges til at styre visningen af burgermenuen -->
         <label for="burger-toggle" class="burger">&#9776;</label>
-        <nav class="menubar"> 
-        <ul>
-            <li class="active"><a href="#">Artister</a>
+        <!-- Label fungerer som burger-ikonet, som brugeren kan klikke på -->
+        
+        <!-- Navigation -->
+        <nav class="menubar">
+            <!-- Selve menuen, der vises, når burger-ikonet aktiveres -->
+            <ul>
+                <!-- Liste over hovedmenuens punkter -->
+                <li class="active">
+                    <a href="#">Artister</a>
+                    <!-- Dropdown-menu for "Artister" -->
                     <ul>
-                    <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
-                    <li class="hoverme"><a href="#">Koncerter</a></li>
-                    <li class="hoverme"><a href="#">Galleri</a></li>
-                    </ul> 
-            </li>
-            <li class="active"><a href="#">Frivillig</a>
-                
+                        <li><a href="interviewogudtalelser.html">Interview og udtalelser</a></li>
+                        <li><a href="#">Koncerter</a></li>
+                        <li><a href="#">Galleri</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">Frivillig</a>
+                    <!-- Dropdown-menu for "Frivillig" -->
                     <ul>
                         <li><a href="voresfrivillig.html">Vores frivillige</a></li>
-                        <li><a href="#">Info om frivillige</a></li> 
+                        <li><a href="#">Info om frivillige</a></li>
                         <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
                     </ul>
-                        
-            <li class="active"><a href="#">Kalender</a>
-            
+                </li>
+                <li class="active">
+                    <a href="#">Kalender</a>
+                    <!-- Dropdown-menu for "Kalender" -->
                     <ul>
-                        <li><a href="#">Kommende Koncerter</a></li> 
+                        <li><a href="#">Kommende Koncerter</a></li>
                         <li><a href="#">Andre Events</a></li>
                         <li><a href="#">Booking</a></li>
                     </ul>
-                
-            <li class="active"><a href="#">Merchandise</a>
-                
+                </li>
+                <li class="active">
+                    <a href="#">Merchandise</a>
+                    <!-- Dropdown-menu for "Merchandise" -->
                     <ul>
-                        <li><a href="merchandise.html">Merchandise</a></li> 
+                        <li><a href="merchandise.html">Merchandise</a></li>
                     </ul>
-            
-            </li>    
-        </ul>
-    </nav>
-</header>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <hr class="menuhr">
+    <!-- En horisontal linje for at adskille navigationen fra hovedindholdet -->
+
+    <!-- MAIN INDHOLD -->
     <main>
         <section>
             <h2 class="frivilligh2">Frivillig på Radar: Fordele som Grøn Koncert og NorthSide</h2>
+            <!-- Hovedoverskrift for sektionen om frivillige -->
             <article class="frivilligtext1">
-            Når du er frivillig på Radar, åbner der sig en verden af muligheder. Udover at være en del af et    stærkt fællesskab og bidrage til byens kulturliv, får du adgang til eksklusive fordele. Radar har samarbejder, der giver dig mulighed for at arbejde som frivillig ved større arrangementer som Grøn Koncert og NorthSide.
-            Her får du ikke kun en unik oplevelse som en del af teamet bag kulisserne. Du får også gratis adgang til arrangementerne. Forestil dig at være en del af maskineriet ved nogle af Danmarks største musikbegivenheder, alt imens du nyder festivalstemningen og koncerterne helt tæt på.
-            Det er en win-win: Du får fede oplevelser, udvider dit netværk og støtter kulturlivet, alt sammen som en del af Radar-familien.</article>
+                Når du er frivillig på Radar, åbner der sig en verden af muligheder. Udover at være en del af et stærkt fællesskab og bidrage til byens kulturliv, får du adgang til eksklusive fordele. Radar har samarbejder, der giver dig mulighed for at arbejde som frivillig ved større arrangementer som Grøn Koncert og NorthSide.
+                Her får du ikke kun en unik oplevelse som en del af teamet bag kulisserne. Du får også gratis adgang til arrangementerne. Forestil dig at være en del af maskineriet ved nogle af Danmarks største musikbegivenheder, alt imens du nyder festivalstemningen og koncerterne helt tæt på.
+                Det er en win-win: Du får fede oplevelser, udvider dit netværk og støtter kulturlivet, alt sammen som en del af Radar-familien.
+            </article>
             <h4>Klar til at opleve musikken fra en helt ny vinkel? Bliv frivillig i dag!</h4>
             <section class="frivilligbillede123">
                 <img class="mand" src="images/frivillig1.webp" alt="frivillig1">
@@ -65,30 +100,38 @@
             </section>
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
         <hr class="footerhr">
+        <!-- En horisontal linje for at adskille indhold fra footeren -->
         <section class="footerbox">
-    
-        <section class="lokation">
-            <h5>Adresse</h5>
-            <p>Karen Wegeners Gade 6</p>
-            <p>DK 8000 Aarhus C</p>
+            <!-- Footer-indhold -->
+            <section class="lokation">
+                <h5>Adresse</h5>
+                <p>Karen Wegeners Gade 6</p>
+                <p>DK 8000 Aarhus C</p>
+            </section>
+        
+            <section class="kontaktoplysninger">
+                <h5>Kontaktoplysninger</h5>
+                <p>Telefon +45 8676 0344</p>
+                <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
+                <p>Generel kontakt: kontakt(@)radarlive.dk</p>
+            </section>
+            
+            <section class="socialemedier">
+                <h5>Sociale Medier</h5>
+                <section class="somelogo">
+                    <a href="https://www.instagram.com/radarlive/"> 
+                        <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo">
+                    </a>
+                    <a href="https://www.facebook.com/radarlive">
+                        <img src="images/facebooklogo.webp" class="facebooklogo" alt="facebooklogo">
+                    </a>
+                </section>
+            </section>
         </section>
-    
-        <section class="kontaktoplysninger">
-            <h5>Kontaktoplysninger</h5>
-            <p>Telefon +45 8676 0344</p>
-            <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
-            <p>Generel kontakt: kontakt(@)radarlive.dk</p>
-        </section>
-        <section class="socialemedier">
-            <h5>Sociale Medier</h5>
-            <section class="somelogo">
-            <a href="https://www.instagram.com/radarlive/"> <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo"></a>
-            <a href="https://www.facebook.com/radarlive"><img src="images/facebooklogo.webp" class="facebooklogo" alt=""></a>
-            </section>
-            </section>
-            </section>
-        </footer>
-    </body>
-    </html>
+    </footer>
+</body>
+</html>

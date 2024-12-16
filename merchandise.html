@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Definerer dokumentets sprog og sikrer korrekt visning af danske tegn -->
     <meta charset="UTF-8">
+    <!-- Sørger for, at hjemmesiden er responsiv og skalerer korrekt på alle enheder -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon vises som et lille ikon i browserfanen -->
     <link rel="icon" href="images/favicon.png" sizes="64x64" type="image/png">
+    <!-- Titel, der vises i browserfanen og hjælper med SEO -->
     <title>Merchandise</title>
+    <!-- Linker til eksternt stylesheet for at adskille design (CSS) fra struktur (HTML) -->
     <link rel="stylesheet" href="css/merchandise.css">
-    <meta name="beskrivelse" content="et website for spillestedetv Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Kort beskrivelse af hjemmesiden til søgemaskiner -->
+    <meta name="beskrivelse" content="et website for spillestedet Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Søgeord, der hjælper søgemaskiner med at finde siden -->
     <meta name="keywords" content="frivillig, koncert, kultur, merchandise, musik, interview">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="navbar">
+        <!-- Logoet linker til forsiden for nem navigation -->
         <a href="index.html"><img src="images/logo.webp" alt="logo" class="forsidelogo"></a>
+        
+        <!-- Checkbox bruges til at lave en mobilvenlig burgermenu -->
         <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <!-- Label fungerer som en knap til at åbne/lukke burgermenuen -->
         <label for="burger-toggle" class="burger">&#9776;</label>
+        
+        <!-- Navigation -->
         <nav class="menubar"> 
-        <ul>
-            <li class="active"><a href="#">Artister</a>
+            <ul>
+                <!-- Dropdown-menu med flere navigationsmuligheder -->
+                <li class="active"><a href="#">Artister</a>
                     <ul>
-                    <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
-                    <li class="hoverme"><a href="#">Koncerter</a></li>
-                    <li class="hoverme"><a href="#">Galleri</a></li>
+                        <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
+                        <li class="hoverme"><a href="#">Koncerter</a></li>
+                        <li class="hoverme"><a href="#">Galleri</a></li>
                     </ul> 
-            </li>
-            <li class="active"><a href="#">Frivillig</a>
-                
+                </li>
+                <li class="active"><a href="#">Frivillig</a>
                     <ul>
                         <li><a href="voresfrivillig.html">Vores frivillige</a></li>
                         <li><a href="#">Info om frivillige</a></li> 
                         <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
                     </ul>
-                        
-            <li class="active"><a href="#">Kalender</a>
-            
+                </li>
+                <li class="active"><a href="#">Kalender</a>
                     <ul>
                         <li><a href="#">Kommende Koncerter</a></li> 
                         <li><a href="#">Andre Events</a></li>
                         <li><a href="#">Booking</a></li>
                     </ul>
-                
-            <li class="active"><a href="#">Merchandise</a>
-                
+                </li>
+                <li class="active"><a href="#">Merchandise</a>
                     <ul>
                         <li><a href="merchandise.html">Merchandise</a></li> 
                     </ul>
-            
-            </li>    
-        </ul>
-    </nav>
-</header>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+    <!-- Adskiller navigation fra hovedindhold med en horisontal linje -->
     <hr class="menuhr">
+
+    <!-- MAIN INDHOLD -->
     <main>
-            <h2 class="merchandiseh2">Radar Merch – Tag Os Med Ud i Gaderne</h2>
-            <article class="merchandisetext">
-                Vi har droppet snakken og lavet vores egen lille kollektion – t-shirts, caps og vandflasker med Radar-navnet og logoet. 
-                Det er street, det er simpelt, og det er din måde at tage musikken og kulturen med dig ud i byen.
-                Køb din merch næste gang du er til koncert, eller lige her i vores webshop og lad os sammen få Radar ud i gaderne.</article>
-                <h3>Det er mere end bare tøj – det er en del af fællesskabet.</h3>
+        <!-- Introduktion til merchandise -->
+        <h2 class="merchandiseh2">Radar Merch – Tag Os Med Ud i Gaderne</h2>
+        <article class="merchandisetext">
+            Vi har droppet snakken og lavet vores egen lille kollektion – t-shirts, caps og vandflasker med Radar-navnet og logoet. 
+            Det er street, det er simpelt, og det er din måde at tage musikken og kulturen med dig ud i byen.
+            Køb din merch næste gang du er til koncert, eller lige her i vores webshop og lad os sammen få Radar ud i gaderne.
+        </article>
+        <h3>Det er mere end bare tøj – det er en del af fællesskabet.</h3>
         <section class="tshirts">
-            <img src="images/hvidtshirt.webp" alt="hvidtshirt" class="tshirtbillede">
-            <img src="images/sorttshirt.webp" alt="sorttshirt" class="tshirtbillede">
+            <img src="images/hvidtshirt.webp" alt="hvid t-shirt" class="tshirtbillede">
+            <img src="images/sorttshirt.webp" alt="sort t-shirt" class="tshirtbillede">
         </section>
         <section class="tshirttext">
             <p class="pristext">Hvid T-shirt</p>
@@ -68,8 +84,8 @@
             <p>249kr,-</p>
         </section>
         <section class="caps">
-            <img src="images/hvidcap.webp" alt="hvidcap" class="capbillede">
-            <img src="images/sortcap.webp" alt="sortcap" class="capbillede">
+            <img src="images/hvidcap.webp" alt="hvid cap" class="capbillede">
+            <img src="images/sortcap.webp" alt="sort cap" class="capbillede">
         </section>
         <section class="captext">
             <p>Hvid Cap</p>
@@ -78,43 +94,47 @@
             <p>199kr,-</p>
         </section>
         <section class="vandflaske">
-            <img src="images/groenvandflaske.webp" alt="groenflaske" class="vandflaskebillede">
-            <img src="images/blaevandflaske.webp" alt="blaeflaske" class="vandflaskebillede">
+            <img src="images/groenvandflaske.webp" alt="grøn vandflaske" class="vandflaskebillede">
+            <img src="images/blaevandflaske.webp" alt="blå vandflaske" class="vandflaskebillede">
         </section>
         <section class="flasketext">
-            <p>Grøn Vandfalske</p>
+            <p>Grøn Vandflaske</p>
             <p>199kr,-</p>
             <p>Blå Vandflaske</p>
             <p>199kr,-</p>
         </section>
-        
     </main>
+
+    <!-- FOOTER -->
     <footer>
+        <!-- Adskiller hovedindhold fra footer med en horisontal linje -->
         <hr class="footerhr">
         <section class="footerbox">
-    
-        <section class="lokation">
-            <h5>Adresse</h5>
-            <p>Karen Wegeners Gade 6</p>
-            <p>DK 8000 Aarhus C</p>
+            <section class="lokation">
+                <h5>Adresse</h5>
+                <p>Karen Wegeners Gade 6</p>
+                <p>DK 8000 Aarhus C</p>
+            </section>
+            <section class="kontaktoplysninger">
+                <h5>Kontaktoplysninger</h5>
+                <p>Telefon +45 8676 0344</p>
+                <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
+                <p>Generel kontakt: kontakt(@)radarlive.dk</p>
+            </section>
+            <section class="socialemedier">
+                <h5>Sociale Medier</h5>
+                <section class="somelogo">
+                    <a href="https://www.instagram.com/radarlive/"> 
+                        <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagram logo">
+                    </a>
+                    <a href="https://www.facebook.com/radarlive">
+                        <img src="images/facebooklogo.webp" class="facebooklogo" alt="facebook logo">
+                    </a>
+                </section>
+            </section>
         </section>
-    
-        <section class="kontaktoplysninger">
-            <h5>Kontaktoplysninger</h5>
-            <p>Telefon +45 8676 0344</p>
-            <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
-            <p>Generel kontakt: kontakt(@)radarlive.dk</p>
-        </section>
-        <section class="socialemedier">
-            <h5>Sociale Medier</h5>
-            <section class="somelogo">
-            <a href="https://www.instagram.com/radarlive/"> <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo"></a>
-            <a href="https://www.facebook.com/radarlive"><img src="images/facebooklogo.webp" class="facebooklogo" alt=""></a>
-            </section>
-            </section>
-            </section>
-        </footer>
-    </body>
-    </html>
+    </footer>
+</body>
+</html>
 
    

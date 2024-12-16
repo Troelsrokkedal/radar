@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Angiver dokumentets sprog og sikrer korrekt visning af danske tegn -->
     <meta charset="UTF-8">
+    <!-- Sørger for, at hjemmesiden er responsiv og skalerer korrekt på alle enheder -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tilføjer et ikon, der vises i browserfanen -->
     <link rel="icon" href="images/favicon.png" sizes="64x64" type="image/png">
+    <!-- Titel, der vises i browserfanen og hjælper med SEO -->
     <title>Interview og Udtalelser</title>
+    <!-- Linker til eksternt stylesheet for at adskille design (CSS) og struktur (HTML) -->
     <link rel="stylesheet" href="css/interviewogudtalelser.css">
-    <meta name="beskrivelse" content="et website for spillestedetv Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Meta-beskrivelse til søgemaskiner -->
+    <meta name="beskrivelse" content="et website for spillestedet Radar, et spillested for upcoming kunstnere, musik og et fællesskab for folk med musikinteresse">
+    <!-- Søgeord, der hjælper søgemaskiner med at finde siden -->
     <meta name="keywords" content="frivillig, koncert, kultur, merchandise, musik, interview">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="navbar">
+        <!-- Logo, der fungerer som et link tilbage til forsiden -->
         <a href="index.html"><img src="images/logo.webp" alt="logo" class="forsidelogo"></a> 
+        
+        <!-- Checkbox til at lave en mobilvenlig burgermenu -->
         <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <!-- Label bruges som knap til at åbne/lukke burgermenuen -->
         <label for="burger-toggle" class="burger">&#9776;</label>
+        
+        <!-- Navigation -->
         <nav class="menubar"> 
-        <ul>
-            <li class="active"><a href="#">Artister</a>
+            <ul>
+                <!-- Dropdown-menu med flere navigationsmuligheder -->
+                <li class="active"><a href="#">Artister</a>
                     <ul>
-                    <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
-                    <li class="hoverme"><a href="#">Koncerter</a></li>
-                    <li class="hoverme"><a href="#">Galleri</a></li>
+                        <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
+                        <li class="hoverme"><a href="#">Koncerter</a></li>
+                        <li class="hoverme"><a href="#">Galleri</a></li>
                     </ul> 
-            </li>
-            <li class="active"><a href="#">Frivillig</a>
-                
+                </li>
+                <li class="active"><a href="#">Frivillig</a>
                     <ul>
                         <li><a href="voresfrivillig.html">Vores frivillige</a></li>
                         <li><a href="#">Info om frivillige</a></li> 
                         <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
                     </ul>
-                        
-            <li class="active"><a href="#">Kalender</a>
-            
+                </li>
+                <li class="active"><a href="#">Kalender</a>
                     <ul>
                         <li><a href="#">Kommende Koncerter</a></li> 
                         <li><a href="#">Andre Events</a></li>
                         <li><a href="#">Booking</a></li>
                     </ul>
-                
-            <li class="active"><a href="#">Merchandise</a>
-                
+                </li>
+                <li class="active"><a href="#">Merchandise</a>
                     <ul>
+                        <!-- Link til merchandise-sektionen -->
                         <li><a href="merchandise.html">Merchandise</a></li> 
                     </ul>
-            
-            </li>    
-        </ul>
-    </nav>
-</header>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Adskiller navigation fra hovedindhold med en horisontal linje -->
     <hr class="menuhr">
+
+    <!-- MAIN INDHOLD -->
     <main>
         <section class="femy">
             <h2 class="h2artister">FEMY: En Uforglemmelig Aften på Radar</h2>
-            <article class="femytext">“At spille på Radar var en kæmpe milepæl for os i FEMY. Fra start følte vi os hjemme – både teamet og publikum gav os en oplevelse, hvor vi kunne være os selv og dele vores musik på den mest ægte måde. Radar er mere end en scene; det er en platform, der virkelig løfter upcoming artister.
-            Aftenen gav os ikke kun nye fans, men også selvtillid og en stærkere forbindelse til musikmiljøet i Aarhus. Radar gør en kæmpe forskel for byens kulturliv og giver ny musik en vigtig stemme. Vi er evigt taknemmelige og kan ikke vente med at komme tilbage! ❤️ Radar er et sted, der skaber musikalsk magi.”</article>
+            <article class="femytext">
+                “At spille på Radar var en kæmpe milepæl for os i FEMY. Fra start følte vi os hjemme – både teamet og publikum gav os en oplevelse, hvor vi kunne være os selv og dele vores musik på den mest ægte måde. Radar er mere end en scene; det er en platform, der virkelig løfter upcoming artister.
+                Aftenen gav os ikke kun nye fans, men også selvtillid og en stærkere forbindelse til musikmiljøet i Aarhus. Radar gør en kæmpe forskel for byens kulturliv og giver ny musik en vigtig stemme. Vi er evigt taknemmelige og kan ikke vente med at komme tilbage! ❤️ Radar er et sted, der skaber musikalsk magi.”
+            </article>
             <img src="images/femy.webp" alt="femybillede" class="femybillede">
         </section>
         <section class="joeandtheshitboys">
             <h2 class="h2artister1">Joe & The Shitboys: En Koncert vi Aldrig Glemmer!</h2>
-            <article class="joeandtheshitboystext">“At spille på Radar var en gamechanger for os i Joe & The Shitboys. Det var ikke bare en koncert – det var en oplevelse, der forbandt os med både publikum og kulturen i Aarhus. Spillestedet tager musik seriøst og løfter upcoming bands som os med en scene, hvor lyd, rammer og stemning sidder lige i skabet.
-            Radar drives af passion og frivillighed, og det mærkes. Teamet gjorde alt for at skabe en legendarisk aften, og vi gik derfra med nye fans og en endnu større respekt for Aarhus’ kulturliv. Radar er stedet, hvor musik virkelig lever!”</article>
+            <article class="joeandtheshitboystext">
+                “At spille på Radar var en gamechanger for os i Joe & The Shitboys. Det var ikke bare en koncert – det var en oplevelse, der forbandt os med både publikum og kulturen i Aarhus. Spillestedet tager musik seriøst og løfter upcoming bands som os med en scene, hvor lyd, rammer og stemning sidder lige i skabet.
+                Radar drives af passion og frivillighed, og det mærkes. Teamet gjorde alt for at skabe en legendarisk aften, og vi gik derfra med nye fans og en endnu større respekt for Aarhus’ kulturliv. Radar er stedet, hvor musik virkelig lever!”
+            </article>
             <img src="images/joeandtheshitboys.webp" alt="joeandtheshitboys" class="joeandtheshitboysbillede">
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
+        <!-- Adskiller hovedindhold fra footer med en horisontal linje -->
         <hr class="footerhr">
+
         <section class="footerbox">
-    
-        <section class="lokation">
-            <h5>Adresse</h5>
-            <p>Karen Wegeners Gade 6</p>
-            <p>DK 8000 Aarhus C</p>
+            <section class="lokation">
+                <h5>Adresse</h5>
+                <p>Karen Wegeners Gade 6</p>
+                <p>DK 8000 Aarhus C</p>
+            </section>
+            <section class="kontaktoplysninger">
+                <h5>Kontaktoplysninger</h5>
+                <p>Telefon +45 8676 0344</p>
+                <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
+                <p>Generel kontakt: kontakt(@)radarlive.dk</p>
+            </section>
+            <section class="socialemedier">
+                <h5>Sociale Medier</h5>
+                <section class="somelogo">
+                    <!-- Instagram-logo og link -->
+                    <a href="https://www.instagram.com/radarlive/">
+                        <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo">
+                    </a>
+                    <!-- Facebook-logo og link -->
+                    <a href="https://www.facebook.com/radarlive">
+                        <img src="images/facebooklogo.webp" class="facebooklogo" alt="facebooklogo">
+                    </a>
+                </section>
+            </section>
         </section>
-    
-        <section class="kontaktoplysninger">
-            <h5>Kontaktoplysninger</h5>
-            <p>Telefon +45 8676 0344</p>
-            <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
-            <p>Generel kontakt: kontakt(@)radarlive.dk</p>
-        </section>
-        <section class="socialemedier">
-            <h5>Sociale Medier</h5>
-            <section class="somelogo">
-            <a href="https://www.instagram.com/radarlive/"> <img src="images/instagramlogo.webp" class="instagramlogo" alt="instagramlogo"></a>
-            <a href="https://www.facebook.com/radarlive"><img src="images/facebooklogo.webp" class="facebooklogo" alt=""></a>
-            </section>
-            </section>
-            </section>
-        </footer>
- </body>
-    </html>
+    </footer>
+</body>
+</html>
