@@ -171,6 +171,7 @@
     /* Forside billeder */
     .forsidebilleder {
         display: flex; /* Brug flexbox til layout */
+
     }
 
     .forsidebillede {
@@ -179,16 +180,27 @@
         width: 13rem; /* Bredde på billede */
         margin: 1rem; /* Mellemrum omkring billedet */
         object-fit: cover; /* Tilpasser billedets dimensioner */
-        margin-top: 1rem;
+        margin-top: 2rem;
         box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge til billedet */
     }
 
-    .forsidebillede1, .forsidebillede2 {
+    .forsidebillede1 {
         position: absolute;
         height: 10rem;
         width: 7rem;
-        object-fit: cover;
-        margin-top: 1rem;
+        margin: 16.5rem;
+        object-fit: cover; 
+        margin-top: 13rem; 
+        box-shadow: 2px 2px 4px 2px black;
+    }
+
+    .forsidebillede2 {
+        position: absolute;
+        height: 10rem;
+        width: 7rem;
+        margin: 15rem;
+        object-fit: cover; 
+        margin-top: 2rem; 
         box-shadow: 2px 2px 4px 2px black;
     }
 
@@ -205,12 +217,28 @@
         margin-top: 25rem; /* Stor afstand over linjen */
     }
 
-    h5, .lokation, .kontaktoplysninger {
+    h5{
         line-height: 2rem; /* Øger linjeafstand */
         text-align: center; /* Centreret tekst */
         font-size: 1.2rem; /* Større tekst */
         margin-top: 1rem;
     }
+
+        
+.lokation{
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.kontaktoplysninger{
+    line-height: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+}
 
     /* Sociale medier logoer */
     .instagramlogo, .facebooklogo {
@@ -432,11 +460,26 @@
         margin-top: 34rem; /* Stor afstand over linjen */
     }
 
-    h5, .lokation, .kontaktoplysninger {
+    h5 {
         line-height: 2rem; /* Øger linjeafstand */
         text-align: center; /* Centreret tekst */
         font-size: 1.2rem; /* Større tekst */
         margin-top: 1rem; /* Plads over teksten */
+    }
+
+    .lokation{
+        line-height: 2rem;
+        text-align: center;
+    
+    }
+    
+    .kontaktoplysninger{
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 
     /* Sociale medier logoer */
@@ -560,7 +603,7 @@
         margin-left: 4.5rem; /* Afstand fra venstre */
         margin-top: -1rem; /* Reducer topafstand */
     }
-
+    
     .forside {
         display: flex;
         justify-content: space-around;
