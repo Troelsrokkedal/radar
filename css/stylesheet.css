@@ -30,27 +30,22 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
-.line {
-    height: 0.2rem;
-    background-color: #214F22; 
-    margin: 5px 0;
-    border-radius: 0.2rem; 
-}
+
 
 .burger-checkbox {
     display: none;
 }
 
 .burger {
+    color: #214F22;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     width: 1.5rem;
     margin: 0.5rem;
-    height: 3rem;
     }
 
 .menubar ul li:focus-within > ul,
@@ -68,7 +63,6 @@ body {
     text-align: left;
     font-family: JetBrains Mono;
     z-index: 9999;
-   
 }
 
 .burger-checkbox:checked ~ .menubar {
@@ -288,18 +282,13 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
-.line {
-    height: 0.2rem;
-    background-color: #214F22; 
-    margin: 5px 0;
-    border-radius: 0.2rem; 
-}
 
 .burger-checkbox {
     display: none;
 }
 
 .burger {
+    color: #214F22;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -509,6 +498,7 @@ body {
         font-family: JetBrains Mono;
     }
     
+    
     body {
         background: linear-gradient(
             to bottom, 
@@ -542,21 +532,19 @@ body {
     }
     
     .menubar ul {
-        display:inline-flex;
+        display: flex;
         color:#FF5733;
         padding-top: 5rem;
     }
     
     .menubar ul li {
         width: 220px;
-        margin: 15px;
-        padding: 15px;  
+        margin: 1rem; 
         list-style: none;
     }
     
     .menubar ul li a {
-        transition: color 0.3s;
-        
+        transition: color 0.3s;  
     }
     
     .menubar ul li a:hover {
@@ -567,7 +555,7 @@ body {
     .menubar ul li:focus-within > ul,
     .menubar ul li:hover > ul {
     display: block;
-}
+    }
     
     .menubar ul li a {
         text-decoration: none;
@@ -578,18 +566,9 @@ body {
         display: none;
     }
   
-
-    
-
-
-
-
-
-
     .menuhr {
         border-color: black;
-        margin: 1rem;
-        
+        margin: 1rem;  
     }
     
     h2 {
