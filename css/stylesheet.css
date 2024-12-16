@@ -1,658 +1,638 @@
+/* Generelle indstillinger */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+    box-sizing: border-box; /* Inkluderer padding og border i elementets samlede dimensioner */
 }
 
 @font-face {
-    font-family: JetBrains Mono;
-    src: url(/fonts/JetBrainsMono-Regular.ttf);
+    font-family: JetBrains Mono; /* Importerer og definerer en custom skrifttype */
+    src: url(/fonts/JetBrainsMono-Regular.ttf); /* Placering af skrifttypen */
 }
 
-@media (max-width: 391px ) {
-* {
-font-family: JetBrains Mono;
-}   
-body {
-    background: linear-gradient(
-        to bottom, 
-        #FF5733 20%,  
-        #3498DB 80%  
-      );
-} 
-.forsidelogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 70px;
-    margin: auto; 
-    padding-top: 1rem;
-}
-
-
-.burger-checkbox {
-    display: none;
-}
-
-.burger {
-    color: #214F22;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 1.5rem;
-    margin: 0.5rem;
-    font-size: 2.6rem;
+/* -------------------------------- */
+/* Små skærme (max-width: 391px) */
+/* -------------------------------- */
+@media (max-width: 391px) {
+    /* Global styling */
+    * {
+        font-family: JetBrains Mono; /* Anvender JetBrains Mono skrifttypen på alle elementer */
     }
 
-.menubar ul li:focus-within > ul,
-.menubar ul li:hover > ul {
-    display: block;
-}
+    /* Baggrundsfarve og gradient */
+    body {
+        background: linear-gradient(
+            to bottom, 
+            #FF5733 20%,  /* Orange farve øverst */
+            #3498DB 80%   /* Blå farve nederst */
+        );
+    }
 
-.menubar {
-    display: none; 
-    background-color: #FF5733;
-    position: absolute;
-    top: 5rem; 
-    right: 0;
-    width: 100%;
-    text-align: left;
-    font-family: JetBrains Mono;
-    z-index: 9999;
-}
+    /* Forsidelogo */
+    .forsidelogo {
+        display: flex; /* Bruger flexbox til centreret placering */
+        justify-content: center;
+        align-items: center;
+        width: 60px; /* Logoets bredde */
+        height: 70px; /* Logoets højde */
+        margin: auto; /* Centrerer logoet horisontalt */
+        padding-top: 1rem; /* Plads over logoet */
+    }
 
-.burger-checkbox:checked ~ .menubar {
-    display: block;
-}
+    /* Skjult menu (burger-menu funktionalitet) */
+    .burger-checkbox {
+        display: none; /* Skjuler checkbox, der bruges til at aktivere menuen */
+    }
 
-.menubar ul {
-    display: block;
-    width: 100%;
-    gap: 0;
-    list-style: none; 
-}
+    /* Burger-menu ikon */
+    .burger {
+        color: #214F22; /* Farve på menuikonet */
+        display: flex; /* Brug flexbox til kolonne-layout */
+        flex-direction: column; /* Linjer i burger-ikon placeres i kolonne */
+        cursor: pointer; /* Skift musen til en pointer */
+        position: absolute; /* Placeres relativt til dens nærmeste positionerede forælder */
+        top: 1rem; /* Placering fra toppen af skærmen */
+        right: 1rem; /* Placering fra højre side */
+        width: 1.5rem; /* Bredde på burger-menu ikon */
+        margin: 0.5rem; /* Tilføjer mellemrum omkring */
+        font-size: 2.6rem; /* Størrelsen på burger-ikonet */
+    }
 
-.menubar ul li {
-    width: 220px;
-    margin: 15px;
-    padding: 15px;  
-    list-style: none;
-}
+    /* Dropdown-menu ved hover */
+    .menubar ul li:focus-within > ul,
+    .menubar ul li:hover > ul {
+        display: block; /* Viser undermenuen ved hover eller fokus */
+    }
 
-.menubar ul li a{
-    color: black;
-    text-decoration: none;
-}
+    /* Selve menuen */
+    .menubar {
+        display: none; /* Skjul menu som standard */
+        background-color: #FF5733; /* Orange baggrund for menuen */
+        position: absolute; /* Placeres øverst i forhold til andre elementer */
+        top: 5rem; /* Starter lige under burger-menuen */
+        right: 0; /* Justerer menuen til højre */
+        width: 100%; /* Fylder hele bredden af skærmen */
+        text-align: left; /* Tekstjustering til venstre */
+        font-family: JetBrains Mono; /* Skrifttype for menuen */
+        z-index: 9999; /* Sørger for at menuen er øverst */
+    }
 
-.menubar ul li ul{
-    display: none;
-}
+    /* Når menuen er aktiveret via checkbox */
+    .burger-checkbox:checked ~ .menubar {
+        display: block; /* Gør menuen synlig */
+    }
 
-.menubar ul li ul li {
-    padding: 10px;
-    color: black;
-}
+    /* Menuens indhold */
+    .menubar ul {
+        display: block; /* Viser menupunkterne i blokke */
+        width: 100%; /* Fylder hele bredden */
+        gap: 0; /* Ingen afstand mellem elementer */
+        list-style: none; /* Fjerner punktopstilling */
+    }
 
-.menubar ul li ul li {
-    text-align: left;
-    padding: 0.5rem 1rem;
-}
+    /* Menuens punkter */
+    .menubar ul li {
+        width: 220px; /* Bredde på menupunkterne */
+        margin: 15px; /* Mellemrum mellem menupunkterne */
+        padding: 15px; /* Indre mellemrum for tekst */
+        list-style: none; /* Fjerner punktopstilling */
+    }
 
-.menubar ul li ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
+    .menubar ul li a {
+        color: black; /* Sort tekstfarve */
+        text-decoration: none; /* Ingen understregning */
+    }
 
-.menubar ul li ul li a:hover {
-    text-decoration: none;
-    color: #3498DB;
-}
+    /* Undermenu */
+    .menubar ul li ul {
+        display: none; /* Skjuler undermenuen som standard */
+    }
 
+    .menubar ul li ul li {
+        padding: 10px; /* Indre mellemrum i undermenuen */
+        color: black; /* Sort tekstfarve */
+    }
 
-.menuhr {
-    border-color: black;
-    margin: 1rem;
-    
-}
+    .menubar ul li ul li {
+        text-align: left; /* Justerer teksten til venstre */
+        padding: 0.5rem 1rem; /* Tilføjer padding for indrykning */
+    }
 
-h2 {
-    text-align: left;
-    font-size: 1.2rem;
-    font-family: JetBrains Mono;
-    margin: 1rem;
-}
+    .menubar ul li ul li a {
+        color: black; /* Sort tekstfarve */
+        text-decoration: none; /* Ingen understregning */
+        font-size: 0.9rem; /* Mindre tekststørrelse */
+    }
 
-h3 {
-text-align: left;
-font-size: 1rem;
-font-family: JetBrains Mono;
-margin: 1rem;
-margin-top: -1rem;
-}
+    .menubar ul li ul li a:hover {
+        text-decoration: none; /* Ingen understregning ved hover */
+        color: #3498DB; /* Skifter tekstfarve til blå ved hover */
+    }
 
-.forsidetext{
-    text-align: justify;
-    margin: 1rem;
-    font-family: JetBrains Mono;
-    line-height: 1.8rem;  
-    font-size: 0.8rem; 
-}
+    /* Vandret skillelinje */
+    .menuhr {
+        border-color: black; /* Sort farve på linjen */
+        margin: 1rem; /* Afstand over og under linjen */
+    }
 
-h4 {
-    text-align: left;
-    font-size: 1rem;
-    font-family: JetBrains Mono;
-    margin: 1rem; 
-}
+    /* Overskrifter */
+    h2 {
+        text-align: left; /* Justering til venstre */
+        font-size: 1.2rem; /* Størrelse på overskrift */
+        font-family: JetBrains Mono; /* Skrifttype */
+        margin: 1rem; /* Mellemrum omkring overskriften */
+    }
 
-.forsidebilleder{
-    display: flex;
-}
+    h3 {
+        text-align: left; /* Justering til venstre */
+        font-size: 1rem; /* Mindre overskrift */
+        font-family: JetBrains Mono; /* Skrifttype */
+        margin: 1rem; /* Mellemrum omkring overskriften */
+        margin-top: -1rem; /* Mindre topmargen */
+    }
 
-.forsidebillede { 
-    position: absolute;
-    height: 19rem;
-    width: 13rem;
-    margin: 1rem;
-    object-fit: cover; 
-    margin-top: 1rem;
-    box-shadow: 2px 2px 4px 2px black;
-}
+    h4 {
+        text-align: left; /* Justering til venstre */
+        font-size: 1rem; /* Mindre overskrift */
+        font-family: JetBrains Mono; /* Skrifttype */
+        margin: 1rem; /* Mellemrum omkring overskriften */
+        margin-top: -1rem; /* Mindre topmargen */
+    }
 
-.forsidebillede1 {
-    position: absolute;
-    height: 10rem;
-    width: 7rem;
-    margin: 16.5rem;
-    object-fit: cover; 
-    margin-top: 12rem; 
-    box-shadow: 2px 2px 4px 2px black;
-}
+    /* Tekst på forsiden */
+    .forsidetext {
+        text-align: justify; /* Justeret tekst på begge sider */
+        margin: 1rem; /* Mellemrum omkring teksten */
+        font-family: JetBrains Mono; /* Skrifttype */
+        line-height: 1.8rem; /* Øger linjeafstand */
+        font-size: 0.8rem; /* Mindre tekststørrelse */
+    }
 
+    /* Forside billeder */
+    .forsidebilleder {
+        display: flex; /* Brug flexbox til layout */
+    }
 
-.forsidebillede2 {
-    position: absolute;
-    height: 10rem;
-    width: 7rem;
-    margin: 15rem;
-    object-fit: cover; 
-    margin-top: 1rem; 
-    box-shadow: 2px 2px 4px 2px black;
-}
+    .forsidebillede {
+        position: absolute;
+        height: 19rem; /* Højde på billede */
+        width: 13rem; /* Bredde på billede */
+        margin: 1rem; /* Mellemrum omkring billedet */
+        object-fit: cover; /* Tilpasser billedets dimensioner */
+        margin-top: 1rem;
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge til billedet */
+    }
 
+    .forsidebillede1, .forsidebillede2 {
+        position: absolute;
+        height: 10rem;
+        width: 7rem;
+        object-fit: cover;
+        margin-top: 1rem;
+        box-shadow: 2px 2px 4px 2px black;
+    }
 
-.footerbox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
-}
+    /* Footer */
+    .footerbox {
+        display: flex; /* Brug flexbox til layout */
+        align-items: center; /* Centrerer indhold vertikalt */
+        flex-direction: column; /* Vertikal layout */
+        margin: 1rem;
+    }
 
-.footerhr {
-    border-color: black;
-    margin-top: 25rem;
-}
-h5 {
-    line-height: 2rem;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-.lokation{
-    line-height: 2rem;
-    text-align: center;
+    .footerhr {
+        border-color: black; /* Sort linje */
+        margin-top: 25rem; /* Stor afstand over linjen */
+    }
 
-}
+    h5, .lokation, .kontaktoplysninger {
+        line-height: 2rem; /* Øger linjeafstand */
+        text-align: center; /* Centreret tekst */
+        font-size: 1.2rem; /* Større tekst */
+        margin-top: 1rem;
+    }
 
-.kontaktoplysninger{
-    line-height: 2rem;
-    text-align: center;
-}
+    /* Sociale medier logoer */
+    .instagramlogo, .facebooklogo {
+        width: 2rem; /* Størrelse på logoer */
+        height: 2rem;
+        margin-right: 1rem;
+        border-radius: 0.5rem; /* Runde hjørner */
+    }
 
-p {
-    font-size: 0.8rem;
+    .somelogo {
+        display: flex; /* Brug flexbox */
+        justify-content: space-evenly; /* Lige afstand mellem elementer */
+    }
 }
-
-.instagramlogo {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
-}
-
-.facebooklogo {
-    width: 2rem;
-    height: 2rem;
-}
-.somelogo{
-    display: flex;
-    justify-content: space-evenly;
-}
-}
-
 
 
 
 
 @media (min-width: 392px) and (max-width: 768px) {
+    /* Global skrifttype */
     * {
-        font-family: JetBrains Mono;
+        font-family: JetBrains Mono; /* Brug JetBrains Mono til alle elementer */
     }
-    
+
+    /* Baggrundsfarve med gradient */
     body {
         background: linear-gradient(
             to bottom, 
-            #FF5733 20%,  /* Startfarve: orange */
-            #3498DB 80%   /* Slutfarve: blå */
-          );
-    }
-   
-body {
-    background: linear-gradient(
-        to bottom, 
-        #FF5733 20%,  
-        #3498DB 80%   
-      );
-}
-
-.forsidelogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 90px;
-    margin: auto; 
-    padding-top: 1rem;
-}
-
-.burger-checkbox {
-    display: none;
-}
-
-.burger {
-    color: #214F22;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    width: 1.5rem;
-    margin: 0.5rem;
-    font-size: 4rem;
+            #FF5733 20%,  /* Orange øverst */
+            #3498DB 80%   /* Blå nederst */
+        );
     }
 
-.menubar ul li:focus-within > ul,
-.menubar ul li:hover > ul {
-    display: block;
-}
+    /* Forsidelogo */
+    .forsidelogo {
+        display: flex; /* Brug flexbox til centreret placering */
+        justify-content: center;
+        align-items: center;
+        width: 80px; /* Bredde på logo */
+        height: 90px; /* Højde på logo */
+        margin: auto; /* Centrer logoet horisontalt */
+        padding-top: 1rem; /* Plads over logoet */
+    }
 
-.menubar {
-    display: none; 
-    background-color: #FF5733;
-    position: absolute;
-    top: 5rem; 
-    right: 0;
-    width: 100%;
-    text-align: left;
-    font-family: JetBrains Mono;
-    z-index: 9999;
-   
-}
+    /* Skjult menu (burger-menu funktionalitet) */
+    .burger-checkbox {
+        display: none; /* Skjul checkbox, der bruges til at aktivere menuen */
+    }
 
-.burger-checkbox:checked ~ .menubar {
-    display: block;
-}
+    /* Burger-menu ikon */
+    .burger {
+        color: #214F22; /* Grøn farve på ikon */
+        display: flex; /* Brug flexbox til at arrangere ikonlinjer */
+        flex-direction: column; /* Vertikal layout af ikonlinjer */
+        cursor: pointer; /* Skift musen til pointer ved hover */
+        position: absolute; /* Positioner relativt til nærmeste forælder */
+        top: 0.5rem; /* Placer ikon fra toppen */
+        right: 1rem; /* Placer ikon fra højre */
+        width: 1.5rem; /* Bredde på burger-menu ikon */
+        margin: 0.5rem; /* Mellemrum omkring */
+        font-size: 4rem; /* Størrelse på burger-menu ikon */
+    }
 
-.menubar ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-    list-style: none;
-    
-}
+    /* Dropdown-menu ved hover */
+    .menubar ul li:focus-within > ul,
+    .menubar ul li:hover > ul {
+        display: block; /* Viser undermenu ved hover eller fokus */
+    }
 
-.menubar ul li {
-    text-align: center;
-    color: black;
-    padding-top: 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
+    /* Selve menuen */
+    .menubar {
+        display: none; /* Skjul menu som standard */
+        background-color: #FF5733; /* Orange baggrund */
+        position: absolute; /* Placeres øverst i forhold til andet indhold */
+        top: 5rem; /* Starter lige under burger-menuen */
+        right: 0; /* Juster menuen til højre */
+        width: 100%; /* Fylder hele skærmbredden */
+        text-align: left; /* Justerer tekst til venstre */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        z-index: 9999; /* Sørger for, at menuen ligger øverst */
+    }
 
-.menubar ul li a{
-    color: black;
-    text-decoration: none;
-}
+    /* Når menuen er aktiveret via checkbox */
+    .burger-checkbox:checked ~ .menubar {
+        display: block; /* Gør menuen synlig */
+    }
 
-.menubar ul li ul{
-    display: none;
-}
+    /* Menuens indhold */
+    .menubar ul {
+        flex-direction: column; /* Vertikal opstilling af menupunkter */
+        width: 100%; /* Fylder hele bredden */
+        gap: 0; /* Ingen afstand mellem menupunkterne */
+        list-style: none; /* Fjerner punktopstilling */
+    }
 
-.menubar ul li ul li {
-    padding: 10px;
-    color: black;
-}
+    /* Menuens punkter */
+    .menubar ul li {
+        text-align: center; /* Centrerer teksten */
+        color: black; /* Sort tekst */
+        padding-top: 1rem; /* Plads over menupunkterne */
+        text-decoration: none; /* Fjern understregning */
+        font-size: 1.5rem; /* Størrelse på menupunkterne */
+    }
 
-.menubar ul li ul li:last-child {
-    border-bottom: none;
-}
+    .menubar ul li a {
+        color: black; /* Sort tekstfarve */
+        text-decoration: none; /* Fjern understregning */
+    }
 
-.menubar ul li ul li {
-    text-align: left;
-    padding: 0.5rem 1rem;
-}
+    /* Undermenu */
+    .menubar ul li ul {
+        display: none; /* Skjuler undermenuen som standard */
+    }
 
-.menubar ul li ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-}
+    .menubar ul li ul li {
+        padding: 10px; /* Indre mellemrum i undermenuen */
+        color: black; /* Sort tekstfarve */
+    }
 
-.menubar ul li ul li a:hover {
-    text-decoration: none;
-    color: #3498DB;
-}
+    .menubar ul li ul li:last-child {
+        border-bottom: none; /* Fjerner bundgrænse fra sidste element */
+    }
 
+    .menubar ul li ul li {
+        text-align: left; /* Justerer teksten til venstre */
+        padding: 0.5rem 1rem; /* Tilføjer indrykning */
+    }
 
+    .menubar ul li ul li a {
+        color: black; /* Sort tekstfarve */
+        text-decoration: none; /* Fjern understregning */
+        font-size: 1rem; /* Mindre tekststørrelse */
+    }
 
-    
+    .menubar ul li ul li a:hover {
+        color: #3498DB; /* Skift tekstfarve til blå ved hover */
+    }
+
+    /* Vandret skillelinje */
     .menuhr {
-        border-color: black;
-        margin: 1rem;
-        
+        border-color: black; /* Sort farve på linjen */
+        margin: 1rem; /* Afstand over og under linjen */
     }
-    
+
+    /* Overskrifter */
     h2 {
-        text-align: center;
-        font-size: 2.2rem;
-        font-family: JetBrains Mono;
-        margin: 2rem;
+        text-align: center; /* Centrer teksten */
+        font-size: 2.2rem; /* Større overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin: 2rem; /* Afstand omkring overskriften */
     }
-    
+
     h3 {
-    text-align: center;
-    font-size: 1rem;
-    font-family: JetBrains Mono;
-    margin: 2rem;
-    margin-top: -1rem;
+        text-align: center; /* Centrer teksten */
+        font-size: 1rem; /* Mindre overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin: 2rem; /* Afstand omkring overskriften */
+        margin-top: -1rem; /* Mindre topafstand */
     }
-    
-    .forsidetext{
-        text-align: justify;
-        margin: 1rem;
-        font-family: JetBrains Mono;
-        line-height: 1.8rem;  
-        font-size: 0.8rem; 
-    }
-    
+
     h4 {
-        text-align: center;
-        font-size: 1rem;
-        font-family: JetBrains Mono;
-        margin: -1rem; 
-        
+        text-align: center; /* Centrer teksten */
+        font-size: 1rem; /* Mindre overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin: 2rem; /* Afstand omkring overskriften */
+        margin-top: -1rem; /* Mindre topafstand */
     }
-    
-    .forsidebillede { 
+
+    /* Tekst på forsiden */
+    .forsidetext {
+        text-align: justify; /* Justeret tekst til begge sider */
+        margin: 1rem; /* Mellemrum omkring teksten */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        line-height: 1.8rem; /* Gør teksten mere læsbar */
+        font-size: 0.8rem; /* Mindre skriftstørrelse */
+    }
+
+    /* Forside billeder */
+    .forsidebillede {
         position: absolute;
-        height: 30rem;
-        width: 24rem;
-        margin: 3rem;
-        object-fit: cover; 
-        margin-top: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+        height: 30rem; /* Højde på billeder */
+        width: 24rem; /* Bredde på billeder */
+        margin: 3rem; /* Mellemrum omkring billeder */
+        object-fit: cover; /* Tilpasser billedets dimensioner */
+        margin-top: 1rem; /* Plads over billedet */
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge til billedet */
     }
 
     .forsidebillede1 {
         position: absolute;
-        height: 14rem;
-        width: 11rem;
-        margin: 31rem;
-        object-fit: cover;
-        margin-top: 17rem;
-        box-shadow: 2px 2px 4px 2px black;
+        height: 14rem; /* Højde på billede 1 */
+        width: 11rem; /* Bredde på billede 1 */
+        margin: 31rem; /* Mellemrum omkring billede 1 */
+        object-fit: cover; /* Tilpasser billedets dimensioner */
+        margin-top: 17rem; /* Plads over billede 1 */
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge */
     }
-    
-    
+
     .forsidebillede2 {
         position: absolute;
-        height: 14rem;
-        width: 11rem;
-        margin: 29rem;
-        object-fit: cover;
-        margin-top: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+        height: 14rem; /* Højde på billede 2 */
+        width: 11rem; /* Bredde på billede 2 */
+        margin: 29rem; /* Mellemrum omkring billede 2 */
+        object-fit: cover; /* Tilpasser billedets dimensioner */
+        margin-top: 1rem; /* Plads over billede 2 */
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge */
     }
-    
+
+    /* Footer */
     .footerbox {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 1rem;
+        display: flex; /* Brug flexbox til layout */
+        align-items: center; /* Centrerer indhold vertikalt */
+        flex-direction: column; /* Vertikal layout */
+        margin: 1rem; /* Afstand omkring footeren */
     }
-    
+
     .footerhr {
-        border-color: black;
-        margin-top: 34rem;
+        border-color: black; /* Sort linje */
+        margin-top: 34rem; /* Stor afstand over linjen */
     }
-    h5 {
-        line-height: 2rem;
-        text-align: center;
-        font-size: 1.2rem;
-        margin-top: 1rem;
+
+    h5, .lokation, .kontaktoplysninger {
+        line-height: 2rem; /* Øger linjeafstand */
+        text-align: center; /* Centreret tekst */
+        font-size: 1.2rem; /* Større tekst */
+        margin-top: 1rem; /* Plads over teksten */
     }
-    .lokation{
-        line-height: 2rem;
-        text-align: center;
-    
+
+    /* Sociale medier logoer */
+    .instagramlogo, .facebooklogo {
+        width: 2rem; /* Størrelse på logoer */
+        height: 2rem; 
+        margin-right: 1rem; /* Afstand mellem logoer */
+        border-radius: 0.5rem; /* Runde hjørner */
     }
-    
-    .kontaktoplysninger{
-        line-height: 2rem;
-        text-align: center;
-    }
-    
-    p {
-        font-size: 0.8rem;
-    }
-    
-    .instagramlogo {
-        width: 2rem;
-        height: 2rem;
-        margin-right: 1rem;
-        border-radius: 0.5rem;
-    }
-    
-    .facebooklogo {
-        width: 2rem;
-        height: 2rem;
-    }
-    .somelogo{
-        display: flex;
-        justify-content: space-evenly;
+
+    .somelogo {
+        display: flex; /* Brug flexbox */
+        justify-content: space-evenly; /* Jævn afstand mellem elementer */
     }
 }
-
 
 
 
 
 
 @media (min-width: 769px) {
+    /* Global skrifttype */
     * {
-        font-family: JetBrains Mono;
+        font-family: JetBrains Mono; /* Brug JetBrains Mono til alle elementer */
     }
-    
-    
+
+    /* Baggrund med gradient */
     body {
         background: linear-gradient(
             to bottom, 
-            #FF5733 20%,  /* Startfarve: orange */
-            #3498DB 80%   /* Slutfarve: blå */
-          );
+            #FF5733 20%,  /* Orange øverst */
+            #3498DB 80%   /* Blå nederst */
+        );
     }
+
+    /* Skjuler burger-menu */
     .burger-checkbox {
-        display: none;
+        display: none; /* Ingen checkbox til burger-menu */
     }
-    
-    .burger{
-    display: none;
+
+    .burger {
+        display: none; /* Ingen burger-menu på store skærme */
     }
+
+    /* Navigation */
     .navbar {
-        display: flex;
-        justify-content: space-around;
+        display: flex; /* Brug flexbox til at arrangere menupunkter */
+        justify-content: space-around; /* Jævn afstand mellem menupunkter */
     }
+
+    /* Forsidelogo */
     .forsidelogo {
-        display: flex;
+        display: flex; /* Brug flexbox til centreret placering */
         justify-content: center;
         align-items: center;
-        width: 110px;
+        width: 110px; /* Større logo til store skærme */
         height: 120px;
-        margin-left: 3rem; 
-        padding-top: 1rem;
-  }
+        margin-left: 3rem; /* Placer logoet til venstre */
+        padding-top: 1rem; /* Plads over logoet */
+    }
+
+    /* Menubar */
     .menubar {
-        text-align: center;
-        background-color: #FF5733;
+        text-align: center; /* Centrerer menuindhold */
+        background-color: #FF5733; /* Orange baggrund */
     }
-    
+
     .menubar ul {
-        display: flex;
-        color:#FF5733;
-        padding-top: 5rem;
+        display: flex; /* Vandret layout til menupunkter */
+        color: #FF5733; /* Tekstfarve */
+        padding-top: 5rem; /* Plads over menuen */
     }
-    
+
     .menubar ul li {
-        width: 220px;
-        margin: 1rem; 
-        list-style: none;
+        width: 220px; /* Bredde på hvert menupunkt */
+        margin: 1rem; /* Mellemrum mellem menupunkter */
+        list-style: none; /* Fjern punktopstilling */
     }
-    
+
     .menubar ul li a {
-        transition: color 0.3s;  
-        width: 20rem;
+        transition: color 0.3s; /* Gør farveskift glidende */
+        width: 20rem; /* Gør klikområdet bredere */
+        text-decoration: none; /* Fjern understregning */
+        color: black; /* Sort tekstfarve */
     }
-    
+
     .menubar ul li a:hover {
-        transform: scale(1.1);
+        transform: scale(1.1); /* Forstør tekst ved hover */
     }
-    
+
     .menubar ul li:focus-within > ul,
     .menubar ul li:hover > ul {
-    display: block;
+        display: block; /* Vis undermenu ved hover eller fokus */
     }
-    
-    .menubar ul li a {
-        text-decoration: none;
-        color: black;
-        
-    }
-    
+
     .menubar ul li ul {
-        display: none;
-        position: absolute;
-        z-index: 2;
-        background-color: #FF5733;
-        border-radius: 1.5rem;
+        display: none; /* Skjul undermenu som standard */
+        position: absolute; /* Placer undermenu over andet indhold */
+        z-index: 2; /* Sørg for undermenuen vises øverst */
+        background-color: #FF5733; /* Orange baggrund */
+        border-radius: 1.5rem; /* Runde hjørner */
     }
-  
+
+    /* Skillelinje */
     .menuhr {
-        border-color: black;
-        margin: 1rem;  
+        border-color: black; /* Sort linje */
+        margin: 1rem; /* Afstand over og under linjen */
     }
-    
+
+    /* Overskrifter */
     h2 {
-        text-align: left;
-        font-size: 3rem;
-        font-family: JetBrains Mono;
-        margin-left: 4rem;
+        text-align: left; /* Juster teksten til venstre */
+        font-size: 3rem; /* Stor overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin-left: 4rem; /* Afstand fra venstre */
     }
-    
     h3 {
-        text-align: left;
-        font-size: 1.5rem;
-        font-family: JetBrains Mono;
-        margin-left: 4.5rem;
-        margin-top: -1rem;
+        text-align: left; /* Juster teksten til venstre */
+        font-size: 1.5rem; /* Mellemstor overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin-left: 4.5rem; /* Afstand fra venstre */
+        margin-top: -1rem; /* Reducer topafstand */
     }
+
     .forside {
         display: flex;
         justify-content: space-around;
     }
-    .forsidetext{
-        display: flex;
-        justify-content: flex-start; 
-        align-items: flex-start; 
-        text-align: left; 
-        font-family: JetBrains Mono;
-        line-height: 1.8rem;  
-        font-size: 1.2rem; 
-        padding: 1rem;
-        width: 40rem;
-        margin-left: -12rem;
+    .forsidetext {
+        display: flex; /* Brug flexbox */
+        justify-content: flex-start; /* Juster tekst til venstre */
+        align-items: flex-start; /* Juster indhold i toppen */
+        text-align: left; /* Juster teksten til venstre */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        line-height: 1.8rem; /* Øget linjeafstand */
+        font-size: 1.2rem; /* Større tekststørrelse */
+        padding: 1rem; /* Indre afstand */
+        width: 40rem; /* Tekstblok bredde */
+        margin-left: -12rem; /* Flyt tekst til venstre */
     }
     
     h4 {
-        text-align: center;
-        font-size: 2rem;
-        font-family: JetBrains Mono;
-        margin: -7rem; 
-        margin-top: 2rem;
+        text-align: center; /* Centrer overskrift */
+        font-size: 2rem; /* Stor overskrift */
+        font-family: JetBrains Mono; /* Anvend JetBrains Mono skrifttype */
+        margin: -7rem; /* Reducer topafstand */
+        margin-top: 2rem; /* Juster topafstand */
     }
     
     .forsidebillede { 
         position: absolute;
-        height: 28rem;
-        width: 22rem;
+        height: 28rem; /* Højde på billede */
+        width: 22rem; /* Bredde på billede */
         margin: -23rem;
-        object-fit: cover;
+        object-fit: cover; /* Tilpas billedets dimensioner */
         margin-top: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge */
     }
 
     .forsidebillede1 {
         position: absolute;
-        height: 13rem;
-        width: 10rem;
+        height: 13rem; /* Højde på billede */
+        width: 10rem; /* Bredde på billede */
         margin: 3rem;
-        object-fit: cover;
+        object-fit: cover; /* Tilpas billedets dimensioner */
         margin-top: 16rem;
-        box-shadow: 2px 2px 4px 2px black;
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge */
     }
     
     .forsidebillede2 {
         position: absolute;
-        height: 13rem;
-        width: 10rem;
+        height: 13rem; /* Bredde på billede */
+        width: 10rem; /* Bredde på billede */
         margin: 3rem;
-        object-fit: cover;
+        object-fit: cover; /* Tilpas billedets dimensioner */
         margin-top: 1rem;
-        box-shadow: 2px 2px 4px 2px black;
+        box-shadow: 2px 2px 4px 2px black; /* Tilføjer skygge */
     }
     
     .footerbox {
         display: flex;
-        align-items: center;
-        flex-direction: row;
-        margin: 1rem;
-        justify-content: space-evenly;
+        align-items: center; /* Centrerer indhold vertikalt */
+        flex-direction: row; /* Vandret layout */
+        margin: 1rem; /* Afstand omkring footeren */
+        justify-content: space-evenly; /* Jævn afstand mellem elementer */
     }
     
     .footerhr {
-        border-color: black;
+        border-color: black; /* Farven på linje */
         margin-top: 10rem;
     }
     h5 {
-        line-height: 2rem;
-        text-align: center;
-        font-size: 1.2rem;
-        margin-top: 1rem;
+        line-height: 2rem; /* Øget linjeafstand */
+        text-align: center; /* Centreret tekst */
+        font-size: 1.2rem; /* Mindre tekststørrelse */
+        margin-top: 1rem; /* Plads over teksten */
     }
     .lokation{
         line-height: 2rem;
@@ -670,20 +650,20 @@ body {
     }
     
     .instagramlogo {
-        width: 2rem;
+        width: 2rem; /* Størrelse på logoer */
         height: 2rem;
-        margin-right: 1rem;
-        border-radius: 0.5rem;
+        margin-right: 1rem; /* Afstand mellem logoer */
+        border-radius: 0.5rem; /* Runde hjørner */
     }
     
     .facebooklogo {
-        width: 2rem;
+        width: 2rem; /* Størrelse på logoer */
         height: 2rem;
     }
 
     .somelogo{
-        display: flex;
-        justify-content: space-evenly;
+        display: flex; /* Brug flexbox */
+        justify-content: space-evenly; /* Jævn afstand mellem elementer */
     }
 
 }
