@@ -46,11 +46,17 @@ body {
     flex-direction: column;
     cursor: pointer;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
-    width: 3rem;
+    width: 1.5rem;
     margin: 0.5rem;
+    height: 3rem;
     }
+
+.menubar ul li:focus-within > ul,
+.menubar ul li:hover > ul {
+    display: block;
+}
 
 .menubar {
     display: none; 
@@ -61,10 +67,11 @@ body {
     width: 100%;
     text-align: left;
     font-family: JetBrains Mono;
-    z-index: 9999 !important;
+    z-index: 9999;
+   
 }
 
-.burger-checkbox:checked + .burger + .menubar {
+.burger-checkbox:checked ~ .menubar {
     display: block;
 }
 
@@ -72,27 +79,49 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 0;
+    list-style: none;
+    
 }
 
 .menubar ul li {
     text-align: center;
+    color: black;
+    padding-top: 1rem;
+    text-decoration: none;
+   
 }
 
-.submenu {
-    position: static;
-    padding: 0;
-    z-index: 9999 !important;
+.menubar ul li ul{
+    display: none;
 }
 
-.menubar ul li:hover .submenu {
-    display: none; 
+.menubar ul li ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: black;
 }
 
-.submenu ul li {
+.menubar ul li ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+.menubar ul li ul li {
     text-align: left;
     padding: 0.5rem 1rem;
 }
 
+.menubar ul li ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.menubar ul li ul li a:hover {
+    text-decoration: none;
+    color: #3498DB;
+}
 .menuhr {
     border-color: black;
     margin: 1rem;
@@ -267,6 +296,15 @@ body {
     margin: auto; 
     padding-top: 1rem;
 }
+.forsidelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    margin: auto; 
+    padding-top: 1rem;
+}
 .line {
     height: 0.2rem;
     background-color: #214F22; 
@@ -283,11 +321,17 @@ body {
     flex-direction: column;
     cursor: pointer;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
-    width: 3rem;
+    width: 1.5rem;
     margin: 0.5rem;
+    height: 3rem;
     }
+
+.menubar ul li:focus-within > ul,
+.menubar ul li:hover > ul {
+    display: block;
+}
 
 .menubar {
     display: none; 
@@ -299,9 +343,10 @@ body {
     text-align: left;
     font-family: JetBrains Mono;
     z-index: 9999;
+   
 }
 
-.burger-checkbox:checked + .burger + .menubar {
+.burger-checkbox:checked ~ .menubar {
     display: block;
 }
 
@@ -309,24 +354,46 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 0;
+    list-style: none;
+    
 }
 
 .menubar ul li {
     text-align: center;
+    color: black;
+    padding-top: 1rem;
+    text-decoration: none;
+   
 }
 
-.submenu {
-    position: static;
-    padding: 0;
+.menubar ul li ul{
+    display: none;
 }
 
-.menubar ul li:hover .submenu {
-    display: none; 
+.menubar ul li ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: black;
 }
 
-.submenu ul li {
+.menubar ul li ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li ul li {
     text-align: left;
     padding: 0.5rem 1rem;
+}
+
+.menubar ul li ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.menubar ul li ul li a:hover {
+    text-decoration: none;
+    color: #3498DB;
 }
 
 .menuhr {
@@ -492,8 +559,11 @@ p {
     }
     .burger-checkbox {
         display: none;
-  }
+    }
     
+    .burger{
+    display: none;
+    }
     .navbar {
         display: flex;
         justify-content: space-around;
@@ -527,66 +597,27 @@ p {
     
     .menubar ul li a {
         transition: color 0.3s;
+        
     }
     
     .menubar ul li a:hover {
         transform: scale(1.1);
+       
     }
     
+    .menubar ul li:focus-within > ul,
+    .menubar ul li:hover > ul {
+    display: block;
+}
     
     .menubar ul li a {
         text-decoration: none;
         color: black;
     }
     
-    .submenu {
+    .menubar ul li ul {
         display: none;
     }
-    
-    .menubar ul li:hover .submenu {
-        display: block;
-        position:absolute;
-        background-color: #FF5733;
-        margin-top: 15px;
-        margin-left: -15px;
-    }
-    
-    .menubar ul li:hover .submenu ul {
-        display: block;
-        margin: 10px;
-        padding-top: 10px;
-    }
-    
-    .menubar ul li:hover .submenu ul li {
-        width: 150px;
-        padding: 10px;
-        border-bottom: 1px solid black
-    }
-    
-    .menubar ul li:hover .submenu ul li:last-child {
-        border-bottom: none;
-    }
-    
-    .menubar ul li:hover .submenu ul li a {
-        transition: color 0.3s;
-    }
-    
-    .menubar ul li:hover .submenu ul li a:hover {
-        color: black;
-    }
-    
-    .submenu2 {
-        display: none;
-    }
-    
-    .hoverme:hover .submenu2{
-        position: absolute;
-        display: block;
-        margin-top: -40px;
-        margin-left: 140px;
-        background-color: black;
-    }
-
     
     .menuhr {
         border-color: black;

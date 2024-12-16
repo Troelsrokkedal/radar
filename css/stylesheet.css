@@ -577,50 +577,7 @@ body {
     .menubar ul li ul {
         display: none;
     }
-    
-    .menubar ul li:hover .submenu {
-        display: block;
-        position:absolute;
-        background-color: #FF5733;
-        margin-top: 15px;
-        margin-left: -15px;
-    }
-    
-    .menubar ul li:hover .submenu ul {
-        display: block;
-        margin: 10px;
-        padding-top: 10px;
-    }
-    
-    .menubar ul li:hover .submenu ul li {
-        width: 150px;
-        padding: 10px;
-        border-bottom: 1px solid black
-    }
-    
-    .menubar ul li:hover .submenu ul li:last-child {
-        border-bottom: none;
-    }
-    
-    .menubar ul li:hover .submenu ul li a {
-        transition: color 0.3s;
-    }
-    
-    .menubar ul li:hover .submenu ul li a:hover {
-        color: black;
-    }
-    
-    .submenu2 {
-        display: none;
-    }
-    
-    .hoverme:hover .submenu2{
-        position: absolute;
-        display: block;
-        margin-top: -40px;
-        margin-left: 140px;
-        background-color: black;
-    }
+  
 
     
 

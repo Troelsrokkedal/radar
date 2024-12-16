@@ -9,57 +9,49 @@
 </head>
 <body>
     <header class="navbar">
-        
-        <input type="checkbox" id="burger-toogle" class="burger-checkbox"> 
-
-        <label for="burger-toogle" class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </label>
-            <li><a href="index.html">
-                <div class="logo"> <!--giver den en class, så jeg kan style den i css-->
-                    <img src="images/logo.webp" alt="logo" class="forsidelogo">
-                </div>
-            </a>
-            </li>  
-            <nav class="menubar"> 
-            <ul>
-                <li class="active"><a href="#">Artister</a>
-                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
-                        <ul>
-                        <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
-                        <li class="hoverme"><a href="#">Koncerter</a></li>
-                        <li class="hoverme"><a href="#">Galleri</a></li>
-                        </ul> 
-                    </div>
-                </li>
-                <li><a href="#">Frivillig</a>
-                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
-                        <ul>
-                            <li><a href="voresfrivillig.html">Vores frivillige</a></li>
-                            <li><a href="#">Info om frivillige</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
-                            <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
-                        </ul>
-                        </div>      
-                <li><a href="#">Kalender</a>
-                    <div class="submenu"> <!--giver den en class, så jeg kan style den i css-->
-                        <ul>
-                            <li><a href="#">Kommende Koncerter</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
-                            <li><a href="#">Andre Events</a></li>
-                            <li><a href="#">Booking</a></li>
-                        </ul>
-                    </div>
-                <li><a href="#">Merchandise</a>
-                    <div class="submenu">
-                        <ul>
-                            <li><a href="merchandise.html">Merchandise</a></li> <!--sætter dem i li så jeg kan style deres class i css-->
-                        </ul>
-                    </div>
-                </li>    
-            </ul>
-        </nav>
-    </header>
+        <li><a href="index.html">
+            <div class="logo"> 
+                <img src="images/logo.webp" alt="logo" class="forsidelogo">
+            </div>
+        </a>
+        </li>  
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger">&#9776;</label>
+        <nav class="menubar"> 
+        <ul>
+            <li class="active"><a href="#">Artister</a>
+                    <ul>
+                    <li class="hoverme"><a href="interviewogudtalelser.html">Interview og udtalelser</a></li> 
+                    <li class="hoverme"><a href="#">Koncerter</a></li>
+                    <li class="hoverme"><a href="#">Galleri</a></li>
+                    </ul> 
+            </li>
+            <li class="active"><a href="#">Frivillig</a>
+                
+                    <ul>
+                        <li><a href="voresfrivillig.html">Vores frivillige</a></li>
+                        <li><a href="#">Info om frivillige</a></li> 
+                        <li><a href="blivfrivillig.html">Bliv frivillig</a></li>
+                    </ul>
+                        
+            <li class="active"><a href="#">Kalender</a>
+            
+                    <ul>
+                        <li><a href="#">Kommende Koncerter</a></li> 
+                        <li><a href="#">Andre Events</a></li>
+                        <li><a href="#">Booking</a></li>
+                    </ul>
+                
+            <li class="active"><a href="#">Merchandise</a>
+                
+                    <ul>
+                        <li><a href="merchandise.html">Merchandise</a></li> 
+                    </ul>
+            
+            </li>    
+        </ul>
+    </nav>
+</header>
     <hr class="menuhr">
     <main>
         <section class="femy">
